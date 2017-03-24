@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+</head>
+<body>
+    <!-- logo -->
+    <div id="wrap-logo">
+        <div id="logo">
+            <img src="../images/explorer.png" alt="logo">
+        </div>
+    </div>
+    <!-- 登录界面 -->
+    <div id="wrap-content">
+        <div id="content">
+            <div class="login-info">
+                <h3>密码登录</h3>
+                <a href="#" target="_blank"><img src="../images/code.png" alt="微信登录"></a>
+                <form class="" action="index.html" method="post">
+                    <div class="user-item">
+                        <span><i class="iconfont icon-user"></i></span>
+                        <input type="text" id="username" placeholder="请输入用户名">
+                    </div>
+                    <p id="user-info"><span>用户名不能为空</span></p>
+                    <div class="password-item">
+                        <span><i class="iconfont icon-mima"></i></span>
+                        <input type="text" id="password" placeholder="情输入密码"><br>
+                    </div>
+                    <p id="psw-info"><span>密码不能为空</span></p>
+                    <input type="text" id="verification" placeholder="验证码">
+                    <!-- 验证码 -->
+                    <div class="verification-box"></div>
+                    <input type="submit" id="login-btn" value="登录">
+                </form>
+                <div class="login-item">
+                    <a href="#">忘记密码</a>
+                    <a href="register.html">免费注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <div id="wrap-footer">
+        <div id="footer">
+            <p>北京天骅科技有限公司</p>
+            <span>Copyright 2015 京ICP备13005249号-19</span>
+        </div>
+    </div>
+</body>
+</html>

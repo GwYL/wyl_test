@@ -1,0 +1,52 @@
+/*logo*/
+#wrap-logo { width: 100%; border-bottom: 2px solid #079a3e; }
+#logo { width: 1200px; height: 169px; margin: 0 auto; position: relative; }
+.logo-content { width: 240px; height: 60px; padding-top: 56px; float: left; padding-left: 30px; }
+.help { float: right; width: 240px; height: 24px; position: relative; top: 90px; padding-right: 10px; font-size: 18px; }
+.help a { color: #333; float: left; }
+.help span { float: right; position: relative; bottom: 2px; }
+.help span img { margin-right: 4px; }
+.ico { position: absolute; width: 320px; height: 61px; bottom: -33px; left: 30px; background: #fff; }
+.ad { position: absolute; left: 0; right: 0; margin: auto; }
+
+/*注册表*/
+#wrap-main { width: 100%; }
+#main { width: 1200px; height: 620px; margin: 0 auto; padding-top: 65px; }
+.left-form { float: left; width: 760px; height: 620px; }
+.right-login { float: left; width: 440px; height: 570px; padding-top: 50px; }
+.top-line, .bottom-line { width: 700px; height: 3px; background: url(../images/dashed.jpg); }
+.title { width: 700px; height: 25px; margin: 20px 0; color: #454545; }
+.title span:nth-of-type(1) { font-size: 24px; font-weight: bold; }
+.title span:nth-of-type(2) { font-size: 18px; margin-left: -4px; }
+.iconfont { color: #079a3e; }
+.swh { width: 340px; height: 35px; border: 1px solid #ccc; margin-bottom: 30px; margin-left: 44px; }
+.phone { margin-top: 30px; }
+.verification-box { width: 342px; height: 37px; margin-bottom: 30px; }
+.iconfont { display: block; width: 28px; height: 35px; float: left; font-size: 24px!important; line-height: 35px; }
+.swh input { width: 300px; height: 35px; border: 0; font-size: 15px; }
+.verification-box { margin-left: 44px; }
+#verification { width: 140px; height: 35px; float: left; border: 1px solid #ccc; padding-left: 4px; }
+.verification-item { width: 80px; height: 35px; float: left; background: url(../images/verification-bg.jpg); background-size: 80px 35px; margin-left: 4px; margin-right: 4px; cursor: pointer; }
+#code { width: 240px; height: 35px; float: left; padding-left: 4px; }
+.verification-box span { font-size: 11px; font-family: '微软雅黑'; position: relative; top: 4px; cursor: pointer; }
+.get-code { width: 88px; height: 28px; background: #e6e6e6; font-size: 15px; color: #000; float: right; margin-top: 4px; margin-right: 4px; text-align: center; line-height: 28px; }
+.agree-submit { width: 140px; height: 66px; margin-left: 100px; margin-top: 22px; font-size: 11px; }
+.agree-item { float: left; margin-right: 8px; margin-top: 1px; }
+.agree-box p span { margin-left: 2px; }
+#submit { width: 133px; height: 28px; background: #079a3e; color: #fff; border-radius: 2px; border: 0; margin-top: 25px; }
+
+.right-info { width: 438px; height: 375px; border-left: 2px solid #ccc; position: relative; }
+.right-info img { width: 320px; display: block; position: absolute; top: 25px; left: 0; right: 0; margin: auto; }
+.right-info p { width: 100%; text-align: center; position: relative; top: 140px; font-size: 18px; }
+.login-btn { display: block; width: 66px; height: 23px; border: 1px solid #e0e0e0; background: #079a3e; position: absolute; top: 206px; left: 0; right: 0; margin: auto; font-size: 12px; color: #fff; line-height: 23px; padding-left: 6px; }
+.login-btn img { width: 6px; height: 9px; position: absolute; top: 8px; left: 56px; }
+
+
+
+
+
+
+
+
+
+.pf {}
