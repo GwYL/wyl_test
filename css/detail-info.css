@@ -132,9 +132,13 @@ body { font-family: verdana,arial,"宋体"; }
 .well-evaluate p { color: #d93600; margin-bottom: 4px; }
 .well-evaluate p span { font-size: 29px; font-weight: bold; }
 
-.charts { float: left; width: 586px; height: 60px; }
+.charts { float: left; width: 586px; height: 60px; border-right: 1px dotted #e6e6e6; }
+.charts ul li { width: 100%; height: 20px; line-height: 20px; }
+.charts ul li img { position: relative; top: 3px; margin-left: 16px; }
 
-
+.evaluate-item { width: 200px; height: 60px; margin-left: 31px; float: left; }
+.evaluate-item p { margin-bottom: 6px; }
+.evaluate-item a { display: block; width: 88px; height: 28px; background: #da4f49; color: #fff; text-align: center; line-height: 28px; margin-left: 2px; font-family: "Microsoft Yahei"; }
 
 
 
