@@ -96,7 +96,7 @@
 .item-price span:nth-of-type(2) { color: #c00; font-weight: 600; font-size: 14px; display: inline-block; position: relative; top: 4px; }
 
 /*主要内容*/
-#wrap-main { width: 100%; }
+#wrap-main { width: 100%; border-bottom: 3px solid #e7e7e7; }
 #main { width: 1200px; height: 2340px; margin: 0 auto; }
 
 /*楼层*/

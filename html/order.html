@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>确认订单</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../cart-icon/iconfont.css">
+    <link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="wrap-header">
+        <div id="header">
+            <!-- 欢迎 -->
+            <p><span>您好，欢迎来到</span><span><a href="#">阳光商城</a></span><span>[<a href="login.html">登录</a>]</span><span>[<a href="register.html">注册</a>]</span><span class="ml"><a href="#">邀请有礼</a></span></p>
+            <!-- 帮助收藏 -->
+            <ul>
+                <li><a href="#">免费开店</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li><a href="cart.html">我的购物车</a></li>
+                <li><a href="#">我的收藏</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">关注我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- logo -->
+    <div id="wrap-logo">
+        <div id="logo">
+            <a href="index.html"><img src="../images/explorer.png" alt="logo" class="logo_item"></a>
+            <ul class="ncc-flow">
+                <li>
+                    <i class="iconfont icon-gouwuche"></i>
+                    <p>我的购物车</p>
+                    <span></span>
+                    <div class="hr"></div>
+                </li>
+                <li>
+                    <i class="iconfont icon-bi"></i>
+                    <p>填写核对购物信息</p>
+                    <span></span>
+                    <div class="hr"></div>
+                </li>
+                <li>
+                    <i class="iconfont icon-qianbao"></i>
+                    <p>支付提交</p>
+                    <span></span>
+                    <div class="hr"></div>
+                </li>
+                <li>
+                    <i class="iconfont icon-good"></i>
+                    <p>订单完成</p>
+                    <span></span>
+                    <div class="hr"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="wrap-mian">
+        <div id="main">
+            <div class="order-title">
+                <h3>填写核对购物信息</h3>
+                <span>请仔细核对填写收货、发票等信息，以确保物流快递及时准确投递。</span>
+            </div>
+            <div class="order">
+                <div class="receiver-info">
+                    <p>收货人信息</p>
+                    <label for=""><span>*</span>收货人姓名：</label><input type="text"><br>
+                    <label for=""><span>*</span>所在地区：</label><input type="text"><br>
+                    <label for=""><span>*</span>详细地址：</label>
+                    <select id="province"></select>
+				    <select id="city"></select>
+				    <select id="district"></select>
+                    <span class="warning-info">请填写真实地址，不需要重复填写所在地区</span><br>
+                    <label for=""><span>*</span>电话号码：</label><input type="text"><br>
+                    <div class="save-btn"><a href="">保存收货人信息</a></div>
+                    <p class="cancel"><a href="">取消</a></p>
+                </div>
+                <div class="pay-bill">
+                    <div class="pay-way">
+                        <p>支付方式<span><a href="">[修改]</a></span></p>
+                        在线支付
+                    </div>
+                    <div class="bill-info">
+                        <p>发票信息<span><a href="">[修改]</a></span></p>
+                        不需要发票
+                    </div>
+                </div>
+                <div class="list-info">
+                    <p class="list-title">商品清单</p>
+                    <div class="goods-list">
+                        <div class="order_tb_title">
+                            <div class="name">商品</div>
+                            <div class="price">单价(元)</div>
+                            <div class="num">数量</div>
+                            <div class="sub">小计(元)</div>
+                        </div>
+                        <div class="buyer-msg">
+                            <p>买家留言：</p>
+                            <textarea class="buyer-info"></textarea>
+                        </div>
+                        <div class="total">
+                            <ul>
+                                <li><span>运费：</span><span>0元</span></li>
+                                <li><span>商品金额：</span><span>0元</span></li>
+                                <li><span>本店合计：</span><span>0元</span></li>
+                            </ul>
+                        </div>
+                        <div class="total-money">
+                            <p>订单总金额：<span>126</span>元</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="refer">
+                <div class="refer-btn">
+                    <a href="#">提交订单</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wrap-foot"></div>
+    <script src="../js/jquery-1.12.4.min.js" charset="utf-8"></script>
+    <script src="../js/jquery.cookie.js" charset="utf-8"></script>
+    <script src="../js/order.js" charset="utf-8"></script>
+</body>
+</html>

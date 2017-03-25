@@ -1,0 +1,72 @@
+#wrap-header { background: #fefefe; }
+body { color: #777; }
+#logo { width: 1000px; font-size: 11px; border-bottom: 1px solid #f7f7f7; padding-top: 6px; height: 94px; }
+#logo .iconfont { font-size: 30px!important; }
+.ncc-flow { width: 640px; height: 70px; float: right; position: relative; top: 15px; }
+.ncc-flow li { width: 160px; height: 70px; float: left; font-family: "微软雅黑"; text-align: center; color: #ccc; position: relative; }
+.ncc-flow .icon-bi { color: #27a9e3!important; }
+.ncc-flow li span { display: block; width: 5px; height: 5px; border-radius: 50%; background: #fff; border: 1px solid #ccc; position: absolute; left: 78px; bottom: 29px; z-index: 1; }
+.ncc-flow li:nth-of-type(2) span { background: #27a9e3; box-shadow: 0 0 0 2px rgba(0, 153, 204, 0.15); border: 1px solid #27a9e3; }
+.ncc-flow li p { position: relative; top: 10px; }
+.hr { width: 160px; height: 1px; background: #ddd; position: absolute; bottom: 32px; }
+.ncc-flow li:nth-of-type(2) .hr { background: #27a9e3; }
+.ncc-flow li:nth-of-type(2) { color: #27a9e3; }
+
+#wrap-main { width: 100%; }
+#main { width: 1000px; margin: auto; font-size: 11px; padding-bottom: 20px; }
+.order-title { width: 100%; height: 64px; padding-top: 16px; }
+h3 { color: #555; font-family: arial, "微软雅黑"; font-size: 24px; font-weight: normal; margin-bottom: 2px; }
+.order-title span { color: #aaa; }
+
+.order { width: 998px; border: 1px solid #eee; }
+.receiver-info { width: 980px; height: 256px; border-bottom: 2px solid #eee; padding-left: 18px; padding-top: 14px; color: #777; }
+.receiver-info p { font-size: 16px; color: #333; margin-bottom: 16px; }
+.receiver-info label { display: inline-block; width: 94px; height: 26px; text-align: right; padding-right: 6px; margin-bottom: 15px; }
+.receiver-info label span { color: red; }
+.receiver-info input { width: 130px; height: 24px; border: 1px solid #ccc; color: #777; }
+.warning-info { margin-left: 6px; }
+
+.save-btn { width: 130px; height: 36px; border: 1px solid #c44742; background: #da4f49; text-align: center; line-height: 36px; float: left; }
+.save-btn a { color: #fff; }
+.save-btn a:hover { text-decoration: underline; }
+.cancel { float: left; width: 60px; height: 28px; line-height: 38px; text-align: center; margin-left: 10px; }
+.cancel a { color: #777; font-size: 12px; }
+
+
+
+.pay-way, .bill-info { width: 980px; height: 64px; border-bottom: 2px solid #eee; padding-left: 18px; padding-top: 14px; }
+.pay-bill { color: #777; }
+.pay-bill p { font-size: 16px; color: #333; margin-bottom: 14px; }
+.pay-bill p span { position: relative; top: 4px; left: 10px; font-size: 12px; }
+.pay-bill p span a { color: #27bbed; }
+.pay-bill p span a:hover { color: #E4393C; }
+
+.list-info { width: 980px; padding-left: 18px; padding-top: 12px; padding-bottom: 8px; }
+.list-title { width: 960px; height: 20px;font-size: 15px; color: #333; }
+.goods-list { width: 958px; border-top: 2px solid #aaa; border-bottom: 2px solid #ddd; border-left: 1px solid #ddd; border-right: 1px solid #ddd; }
+.order_tb_title { width: 958px; height: 36px; border-bottom: 1px solid #ddd; }
+.order_tb_title div { float: left; height: 36px; line-height: 36px; color: #666; font-size: 11px; }
+.name { width: 636px; text-align: center; }
+.price { width: 130px; }
+.num { width: 110px; }
+
+.buyer-msg { width: 958px; border-bottom: 1px solid #ddd; margin-top: 1px solid #ddd; padding: 8px 0; }
+.buyer-msg p { width: 60px; height: 86px; line-height: 86px; color: #777; float: left; }
+.buyer-info { min-width: 774px; min-height: 68px; border: 1px solid #999;  outline: none; max-width: 880px; }
+.total { width: 958px; height: 110px; padding-top: 10px; }
+.total ul { width: 164px; height: 110px; float: right; margin-right: 20px; }
+.total ul li { width: 164px; height: 28px; line-height: 28px; }
+.total ul li span:first-child { float: left; }
+.total ul li span:last-child { float: right; }
+
+.total-money { width: 938px; height: 54px; border-top: 1px solid #ddd; padding-right: 20px; line-height: 54px; }
+.total-money p { float: right; font-size: 16px; }
+.total-money p span { font-size: 22px; color: #d93600; margin-right: 4px; }
+
+.refer { width: 1000px; height: 57px; position: relative; }
+.refer-btn { width: 88px; height: 36px; background: #49afcd; text-align: center; line-height: 36px; font-size: 12px; position: absolute; right: 0; bottom: 0; }
+.refer-btn a { color: #fff; }
+.refer-btn a:hover { text-decoration: underline; }
+
+#wrap-footer .data-service li { display: none; }
+#footer { height: 195px; padding-top: 0; }

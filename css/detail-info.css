@@ -17,6 +17,7 @@ body { font-family: verdana,arial,"宋体"; }
 #path span { margin: 0 6px; }
 #path img { margin-right: 4px; position: relative; top: 1px; }
 #path a { color: #777; }
+#path a:hover { color: #E4393C; }
 #goods-detail { width: 1198px; height: 454px; border: 1px solid #eee; }
 
 .left-img { width: 352px; height: 454px; float: left; margin-right: 6px; }
@@ -108,6 +109,7 @@ body { font-family: verdana,arial,"宋体"; }
 .ranking-box li:nth-of-type(4) dl dt span { background-position: 0 -216px; }
 .ranking-box li:nth-of-type(5) dl dt span { background-position: 0 -288px; }
 .ranking-box li dl dd { float: left; width: 144px; height: 50px; margin-left: 4px; font-size: 11px; }
+.ranking-box li dl dd p { width: 120px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
 .ranking-box li dl dd p a { color: #454545; }
 .ranking-box li dl dd p a:hover { color: #b74231; }
 
@@ -120,11 +122,13 @@ body { font-family: verdana,arial,"宋体"; }
 .details-subnav li { float: left; height: 31px; padding-left: 14px; padding-right: 16px; border-right: 1px solid #ddd; line-height: 30px; background: #f5f5f5; }
 .brand { width: 978px; height: 40px; text-indent: 30px; }
 
-.detail-img { display: block; position: relative; top: 50px; left: 20px; }
+.detail-img { display: block; position: relative; top: 30px; left: 20px; cursor: default; }
 
-.more-info { width: 980px; height: 708px; position: absolute; left: 0; bottom: 0; }
+.more-info { width: 980px; height: 707px; position: absolute; left: 0; bottom: 0; }
+.more-info .details-subnav { width: 978px; border-top: 2px solid #d93600; position: relative; bottom: 1px; right: 1px; border-right: 1px solid #d7d7d7; border-left: 1px solid #d7d7d7; }
 
-.evaluate { width: 978px; height: 237px; border: 1px solid #d7d7d7; }
+.evaluate { width: 978px; height: 235px; border: 1px solid #d7d7d7; margin-bottom: 20px; }
+
 .evaluate .details-subnav:nth-of-type(1) li { border: 0; background: none; }
 .charts-box { width: 100%; height: 90px; padding-top: 10px; }
 .evaluate .details-subnav:nth-of-type(2) { border-top: 1px solid #ddd; }
@@ -139,14 +143,28 @@ body { font-family: verdana,arial,"宋体"; }
 .evaluate-item { width: 200px; height: 60px; margin-left: 31px; float: left; }
 .evaluate-item p { margin-bottom: 6px; }
 .evaluate-item a { display: block; width: 88px; height: 28px; background: #da4f49; color: #fff; text-align: center; line-height: 28px; margin-left: 2px; font-family: "Microsoft Yahei"; }
+.evaluate-info { width: 100%; height: 70px; position: relative; }
+.no-content { display: block; width: 50px; height: 14px; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; }
 
+.sales-record { width: 978px; height: 72px; border: 1px solid #d7d7d7; margin-bottom: 20px; }
+.sales-record .details-subnav li { background: none; border: 0; }
+.price-detail { width: 970px; height: 39px; padding-left: 8px; line-height: 39px; position: relative; }
+.price-detail span { color: #D93600; font-size: 14px; font-weight: bold; font-family: arial; }
+.price-detail p { width: 390px; height: 18px; line-height: 18px; color: #fff; margin-right: 425px; background: #c8c8c8; padding-left: 2px; position: absolute; top: 10px; left: 160px; }
 
+.statistics { width: 980px; height: 38px; border-bottom: 1px solid #e7e7e7; line-height: 38px; margin-bottom: 20px; }
+.statistics ul li { float: left; padding: 0 100px; }
 
+.consult { width: 978px; height: 131px; border: 1px solid #d7d7d7; margin-bottom: 20px; }
+.consult .details-subnav li { background: none; border: 0; }
+.cue { width: 978px; height: 97px; background: url(../images/cue_bg.png) no-repeat 20px center; position: relative; }
+.ask-btn { display: block; width: 80px; height: 28px; border: 1px solid #aa312a; background: #bd362f; color: #fff; text-align: center; line-height: 28px; position: absolute; top: 20px; right: 20px; }
 
-
-
-
-
+.all-consult { width: 978px; height: 142px; border: 1px solid #d7d7d7; }
+.all-consult .details-subnav li { backgroung: none; border: 0; }
+.consult-content { width: 978px; height: 110px; position: relative; }
+.no-consult { width: 86px; height: 14px; line-height: 14px; text-align: center; position: absolute; top: 0; bottom: 0; right: 0; left: 0; margin: auto; color: #999; }
+.more-consult { text-decoration: underline; color: #d93600; display: block; width: 92px; height: 14px; position: absolute; bottom: 15px; right: 15px; }
 
 
 .pp{}
