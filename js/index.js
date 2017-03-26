@@ -2,7 +2,7 @@ $(function() {
     // 加载公共部分
     $("#wrap-head").load("head.html");
     $("#wrap-foot").load("foot.html");
-    // 轮播图
+    /* 轮播图 */
     var lis = $("#carousel li"),
         len = lis.length,
         currentIndex = 0,
@@ -23,10 +23,10 @@ $(function() {
 
     timer = setInterval(move, 5000);
 
-    $("#banner").mouseenter(function() {
+    $("#wrap-banner").mouseenter(function() {
         clearInterval(timer);
     })
-    $("#banner").mouseleave(function() {
+    $("#wrap-banner").mouseleave(function() {
         tiemr = setInterval(move, 5000);
     })
 
@@ -43,5 +43,28 @@ $(function() {
         if (nextIndex >= len)
             nextIndex = 0;
     }
+
+    /* 楼层特效 */
+    var _cover = document.createElement("div");
+    $(_cover).addClass("cover");
+    $(_cover).css({
+        width: 197,
+        height: 250,
+        position: "absolute",
+        top: 0,
+        left: 0,
+        background: "white",
+        opacity: 0.6,
+        display: "none"
+    });
+    $(".goods-items .item-info").append(_cover);    
+    $(".goods-items .item-info").mouseenter(function() {
+        $(".cover").css("display", "block");
+        // $(".cover").animate({opacity: 0.6}, 400 );
+    })
+    $(".item-info").mouseleave(function() {
+        $(".cover").css("display", "none");
+        // $(".cover").animate({opacity: 0}, 400 );
+    })
 
 })
