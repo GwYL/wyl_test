@@ -36,33 +36,33 @@
                 </div>
                 <div class="phone swh">
                     <i class="iconfont icon-mobile"></i>
-                    <input type="text" name="phone" value="" placeholder="建议使用常用手机">
+                    <input type="text" id="phone" name="phone" value="" placeholder="建议使用常用手机"><span id="phone_info" class="hint"></span>
                 </div>
                 <div class="password swh">
                     <i class="iconfont icon-mima"></i>
-                    <input type="text" id="password" name="password" value="" placeholder="至少使用两种字符组合">
+                    <input type="password" id="password" name="password" value="" placeholder="至少使用两种字符组合"><span id="password_info" class="hint"></span>
                 </div>
                 <div class="password swh">
                     <i class="iconfont icon-mima"></i>
-                    <input type="text" id="pwd" name="password" value="" placeholder="请再次确认密码">
+                    <input type="password" id="pwd" name="pwd" value="" placeholder="请再次确认密码"><span id="pwd_info" class="hint"></span>
                 </div>
                 <div class="email swh">
                     <i class="iconfont icon-mima"></i>
-                    <input type="text" id="email" name="email" value="" placeholder="请输入正确的邮箱">
+                    <input type="text" id="email" name="email" value="" placeholder="请输入正确的邮箱"><span id="email_info" class="hint"></span>
                 </div>
                 <div class="verification-box">
                     <input type="text" name="verification" id="verification" value="" placeholder="验证码">
                     <div class="verification-item"></div>
-                    <span>看不清，换一张</span>
+                    <span>看不清，换一张</span><span id="verification_info" class="hint"></span>
                 </div>
                 <div class="phone-code swh">
                     <input type="text" id="code" placeholder="请输入手机验证码">
-                    <div class="get-code">获取验证码</div>
+                    <div class="get-code">获取验证码</div><span id="code_info" class="hint"></span>
                 </div>
                 <div class="bottom-line"></div>
                 <div class="agree-submit">
                     <div class="agree-box">
-                        <div class="agree-item"><img src="../images/register-r.jpg" alt=""></div>
+                        <div class="agree-item"><input type="checkbox" name="agree" value="" id="agree"></div>
                         <p>阅读并同意<span><a href="#">服务协议</a></span></p>
                     </div>
                     <input type="submit" name="submit" id="submit" value="立即注册">
@@ -77,5 +77,8 @@
             </div>
         </div>
     </div>
+    <script src="../js/jquery-1.12.4.min.js" charset="utf-8"></script>
+    <script src="../js/jquery.cookie.js" charset="utf-8"></script>
+    <script src="../js/register.js" charset="utf-8"></script>
 </body>
 </html>

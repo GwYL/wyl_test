@@ -19,7 +19,7 @@
 .title span:nth-of-type(1) { font-size: 24px; font-weight: bold; }
 .title span:nth-of-type(2) { font-size: 18px; margin-left: -4px; }
 .iconfont { color: #079a3e; }
-.swh { width: 340px; height: 35px; border: 1px solid #ccc; margin-bottom: 30px; margin-left: 44px; }
+.swh { width: 340px; height: 35px; border: 1px solid #ccc; margin-bottom: 30px; margin-left: 44px; position: relative; }
 .phone { margin-top: 30px; }
 .verification-box { width: 342px; height: 37px; margin-bottom: 30px; }
 .iconfont { display: block; width: 28px; height: 35px; float: left; font-size: 24px!important; line-height: 35px; }
@@ -33,20 +33,12 @@
 .agree-submit { width: 140px; height: 66px; margin-left: 100px; margin-top: 22px; font-size: 11px; }
 .agree-item { float: left; margin-right: 8px; margin-top: 1px; }
 .agree-box p span { margin-left: 2px; }
-#submit { width: 133px; height: 28px; background: #079a3e; color: #fff; border-radius: 2px; border: 0; margin-top: 25px; }
+#agree { position: relative; top: 1px; }
+#submit { width: 133px; height: 28px; background: #079a3e; color: #fff; border-radius: 2px; border: 0; margin-top: 25px; cursor: pointer; }
+.hint { color: red; font-size: 12px; display: block; width: 300px; position: absolute; top: 8px; left: 350px; }
 
 .right-info { width: 438px; height: 375px; border-left: 2px solid #ccc; position: relative; }
 .right-info img { width: 320px; display: block; position: absolute; top: 25px; left: 0; right: 0; margin: auto; }
 .right-info p { width: 100%; text-align: center; position: relative; top: 140px; font-size: 18px; }
 .login-btn { display: block; width: 66px; height: 23px; border: 1px solid #e0e0e0; background: #079a3e; position: absolute; top: 206px; left: 0; right: 0; margin: auto; font-size: 12px; color: #fff; line-height: 23px; padding-left: 6px; }
 .login-btn img { width: 6px; height: 9px; position: absolute; top: 8px; left: 56px; }
-
-
-
-
-
-
-
-
-
-.pf {}

@@ -20,24 +20,25 @@
     <div id="wrap-content">
         <div id="content">
             <div class="login-info">
+                <div class="login-hint">您输入的用户名或密码错误!</div>
                 <h3>密码登录</h3>
                 <a href="#" target="_blank"><img src="../images/code.png" alt="微信登录"></a>
-                <form class="" action="index.html" method="post">
-                    <div class="user-item">
-                        <span><i class="iconfont icon-user"></i></span>
-                        <input type="text" id="username" placeholder="请输入用户名">
-                    </div>
-                    <p id="user-info"><span>用户名不能为空</span></p>
-                    <div class="password-item">
-                        <span><i class="iconfont icon-mima"></i></span>
-                        <input type="text" id="password" placeholder="情输入密码"><br>
-                    </div>
-                    <p id="psw-info"><span>密码不能为空</span></p>
-                    <input type="text" id="verification" placeholder="验证码">
-                    <!-- 验证码 -->
-                    <div class="verification-box"></div>
+                <div class="user-item">
+                    <span><i class="iconfont icon-user"></i></span>
+                    <input type="text" id="username" name="username" placeholder="请输入用户名">
+                </div>
+                <p id="user-info"><span>用户名不能为空</span></p>
+                <div class="password-item">
+                    <span><i class="iconfont icon-mima"></i></span>
+                    <input type="password" id="password" name="password" placeholder="请输入密码"><br>
+                </div>
+                <p id="psw-info"><span>密码不能为空</span></p>
+                <input type="text" id="verification" placeholder="验证码">
+                <!-- 验证码 -->
+                <div class="verification-box"></div>
+                <!-- <form class="" action="index.html" method="post"> -->
                     <input type="submit" id="login-btn" value="登录">
-                </form>
+                <!-- </form> -->
                 <div class="login-item">
                     <a href="#">忘记密码</a>
                     <a href="register.html">免费注册</a>
@@ -52,5 +53,7 @@
             <span>Copyright 2015 京ICP备13005249号-19</span>
         </div>
     </div>
+    <script src="../js/jquery-1.12.4.min.js" charset="utf-8"></script>
+    <script src="../js/login.js" charset="utf-8"></script>
 </body>
 </html>

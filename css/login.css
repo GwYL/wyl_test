@@ -6,26 +6,26 @@
 #content { width: 1200px; height: 621px; margin: 0 auto; background: url(../images/login_bg.png) no-repeat -40px center; }
 
 /*登录信息*/
-.login-info { width: 325px; height: 321px; background: url(../images/tm.png); float: right; margin-top: 120px; margin-right: 200px; position: relative; padding-left: 25px; padding-top: 24px; }
+.login-info { width: 325px; height: 321px; background: url(../images/tm.png); float: right; margin-top: 120px; margin-right: 200px; position: relative; padding-left: 25px; padding-top: 24px; position: relative; }
 .login-info img { position: absolute; top: 3px; right: 3px; }
 h3 { color: #454545; font-size: 18px;}
 .user-item { width: 296px; height: 35px; margin-top: 24px; }
-.user-item span { display: block; width: 43px; height: 35px; float: left; text-align: center; line-height: 35px; }
+.login-info span { display: block; width: 43px; height: 35px; float: left; text-align: center; line-height: 35px; background: #fff; }
 .iconfont { font-size: 28px!important; color: #389c38; }
 #username { width: 250px; height: 35px; border: 0; padding-left: 3px; }
 #user-info { width: 296px; height: 25px; line-height: 20px; color: red; font-size: 12px; }
 #user-info span { display: none; }
 .password-item { width: 296px; height: 35px; }
-.password-item span { display: block; width: 43px; height: 35px; float: left; text-align: center; line-height: 35px; }
 #password { width: 250px; height: 35px; border: 0; padding-left: 3px; }
 #psw-info { width: 296px; height: 25px; line-height: 20px; color: red; font-size: 12px; }
 #psw-info span { display: none; }
 #verification { width: 122px; height: 35px; padding-left: 10px; border: 0; float: left; }
-.verification-box { width: 140px; height: 35px; background: url(../images/verification-bg.jpg) no-repeat; float: left; margin-left: 20px; }
+.verification-box { width: 140px; height: 35px; background: url(../images/verification-bg.jpg) no-repeat; float: left; margin-left: 20px; cursor: pointer; }
 #login-btn { width: 291px; height: 35px; border: 0; margin-top: 25px; color: #389c38; font-size: 16px; font-weight: 600; }
 .login-item { width: 200px; padding-top: 20px; text-align: right; float: right; margin-right: 20px; }
 .login-item a { color: #333; font-weight: 600; font-size: 12px; }
 .login-item a:last-child { margin-left: 20px; }
+.login-hint { width: 200px; height: 35px; line-height: 35px; background: #000; opacity: 0.5; text-align: center; color: #fff; font-size: 14px; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; display: none; }
 
 #wrap-footer { width: 100%; }
 #footer { width: 1200px; height: 142px; margin: 0 auto; text-align: center; padding-top: 24px; color: #454545; font-size: 11px; }

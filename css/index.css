@@ -37,9 +37,10 @@
 #wrap-hot { width: 100%; }
 #hot { width: 1200px; height: 405px; margin: 0 auto; font-size: 11px;}
 #hot-item { width: 989px; height: 293px; }
-.hot-tab { width: 100%; border-bottom: #f0f0f0 2px solid; height: 42px; }
-.hot-tab li { height: 42px; line-height: 42px; float: left; cursor: pointer; padding: 0 75px; color: #454545; }
-.item-info { width: 197px; height: 250px; border-bottom: 1px solid #f0f0f0; border-right: 1px dotted #f0f0f0; float: left; margin-bottom: 10px; }
+.hot-tab { width: 985px; border-bottom: #f0f0f0 2px solid; height: 42px; }
+.hot-tab li { height: 42px; line-height: 42px; float: left; cursor: pointer; padding: 0 75px; position: relative; }
+.hot-tab li a { color: #454545; font-weight: bold; }
+.item-info { width: 196px; height: 250px; border-bottom: 1px solid #f0f0f0; border-right: 1px dotted #f0f0f0; float: left; margin-bottom: 10px; }
 .item-info:nth-child(6) { border-right: 0; }
 .item-info dt { height: 160px; width: 197px; position: relative; }
 .item-info dt img { position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; }

@@ -10,9 +10,14 @@
 </head>
 <body>
     <div id="sidebar">
-        <div class="personal"><img src="../images/sidebar-pic1.jpg" alt="侧边栏图标"></div>
-        <div class="collection"><img src="../images/sidebar-pic2.jpg" alt="侧边栏图标"></div>
-        <div class="cart"><img src="../images/sidebar-pic3.jpg" alt="侧边栏图标"></div>
+        <div class="personal">
+            <img src="../images/sidebar-pic1.gif" alt="侧边栏图标">
+            <div class="personal-item"><a href="#">个人中心</a></div>
+        </div>
+        <div class="collection"><img src="../images/sidebar-pic2.gif" alt="侧边栏图标">
+        <div class="collection-item"><a href="#">我的收藏</a></div></div>
+        <div class="cart"><img src="../images/sidebar-pic3.gif" alt="侧边栏图标">
+        <div class="cart-item"><a href="cart.html">购物车</a></div></div>
     </div>
     <div id="wrap-head"></div>
     <div id="wrap-main">
@@ -24,7 +29,11 @@
             <!-- 商品详情 -->
             <div id="goods-detail">
                 <div class="left-img">
-                    <div class="img-item"><img src="../images/detail-pic1.png" alt="货物"></div>
+                    <div class="img-item">
+                        <img src="../images/detail-pic1.png" alt="货物">
+                        <!-- <div class="goods-detail-cover"></div>
+                        <div class="magnifier" style="display: none; "></div> -->
+                    </div>
                     <div class="img-box">
                         <div class="first-img">
                             <img src="../images/detail-pic1.png" alt="第一张详细图片">
@@ -35,7 +44,6 @@
                         <span class="share-item">分享</span>
                         <span class="collect-item">收藏商品</span>
                     </div>
-                    <div class="goods-detail-cover"></div>
                     <div class="enlarge-img"><img src="../images/hot-pic1.png" alt="放大后的图片"></div>
                 </div>
                 <div class="right-info">
@@ -116,14 +124,66 @@
                             <p>全部商品</p>
                         </div>
                     </div>
-                    <!-- 排行 -->
+                    <!-- 商品排行 -->
                     <div class="ranking">
                         <p class="detail-title">商品排行</p>
                         <div class="ranking-tab">
-                            <span class="hot-sell">热销商品排行</span>
-                            <span class="hot-topic">热门收藏排行</span>
+                            <span class="hot-sell"><a href="#tab1">热销商品排行</a></span>
+                            <span class="hot-topic"><a href="#tab2">热门收藏排行</a></span>
                         </div>
-                        <ul class="ranking-box">
+                        <ul id="tab1" class="ranking-box" style="display: block; ">
+                            <li>
+                                <dl>
+                                    <dt><span></span></dt>
+                                    <dd>
+                                        <p class="item-name"><a href="#">锐智H03护膝保暖老寒腿</a></p>
+                                        <p>¥88.00</p>
+                                        <span>出售：1笔</span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><span></span></dt>
+                                    <dd>
+                                        <p class="item-name"><a href="#">智慧眼-随时随地，尽在“</a></p>
+                                        <p>¥798.00</p>
+                                        <span>出售：7笔</span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><span></span></dt>
+                                    <dd>
+                                        <p class="item-name"><a href="#">欧乐芬 天然口腔保健液 漱</a></p>
+                                        <p>¥141.00</p>
+                                        <span>出售：3笔</span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><span></span></dt>
+                                    <dd>
+                                        <p class="item-name"><a href="#">海嘉旺 即食沙嗲味牛肉粒</a></p>
+                                        <p>¥47.00</p>
+                                        <span>出售：0笔</span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><span></span></dt>
+                                    <dd>
+                                        <p class="item-name"><a href="#">振隆食品 伊朗开心果226</a></p>
+                                        <p>¥88.00</p>
+                                        <span>出售：6笔</span>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <ul id="tab2" class="ranking-box" style="display: none; ">
                             <li>
                                 <dl>
                                     <dt><span></span></dt>
@@ -270,6 +330,7 @@
     <div id="wrap-foot"></div>
     <script src="../js/jquery-1.12.4.min.js" charset="utf-8"></script>
     <script src="../js/jquery.cookie.js" charset="utf-8"></script>
+    <script src="../js/jquery.elevateZoom-2.2.3.min.js" charset="utf-8"></script>
     <script src="../js/detail-info.js" charset="utf-8"></script>
 </body>
 </html>
