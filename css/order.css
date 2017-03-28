@@ -25,14 +25,14 @@ h3 { color: #555; font-family: arial, "微软雅黑"; font-size: 24px; font-weig
 .receiver-info label span { color: red; }
 .receiver-info input { width: 130px; height: 24px; border: 1px solid #ccc; color: #777; }
 .warning-info { margin-left: 6px; }
+select { padding: 2px 4px; position: relative; }
+#province { left: -3px; }
 
 .save-btn { width: 130px; height: 36px; border: 1px solid #c44742; background: #da4f49; text-align: center; line-height: 36px; float: left; }
 .save-btn a { color: #fff; }
 .save-btn a:hover { text-decoration: underline; }
 .cancel { float: left; width: 60px; height: 28px; line-height: 38px; text-align: center; margin-left: 10px; }
 .cancel a { color: #777; font-size: 12px; }
-
-
 
 .pay-way, .bill-info { width: 980px; height: 64px; border-bottom: 2px solid #eee; padding-left: 18px; padding-top: 14px; }
 .pay-bill { color: #777; }

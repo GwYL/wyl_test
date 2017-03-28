@@ -31,8 +31,6 @@
                 <div class="left-img">
                     <div class="img-item">
                         <img src="../images/detail-pic1.png" alt="货物">
-                        <!-- <div class="goods-detail-cover"></div>
-                        <div class="magnifier" style="display: none; "></div> -->
                     </div>
                     <div class="img-box">
                         <div class="first-img">
@@ -56,7 +54,7 @@
                         <div class="real-price">
                             <div class="price-item">
                                 <p>商   城   价:</p>
-                                <span>¥250800.00</span>
+                                <span class="item-price">¥250800.00</span>
                             </div>
                             <div class="score">
                                 <p>商品评分</p>
@@ -68,14 +66,16 @@
                             <div class="num-item">
                                 购买数量:
                                 <input type="text" id="num" value="1">
-                                <span class="add">+</span>
-                                <span class="minus">-</span>
-                                <span class="num-info">（当前库存 100 件）</span>
+                                <input type="button" name="" value="+" class="add">
+                                <input type="button" name="" value="-" class="minus">
+                                <span class="num-info">（当前库存 <span class="real-num">100</span> 件）</span>
                             </div>
                         </div>
                         <div class="buy-cart">
                             <span class="buy">立即购买</span>
-                            <a href="cart.html" class="addtocart">加入购物车</a>
+                            <a class="addtocart">加入购物车</a>
+                            <div class="hint-info">该商品库存数量不足！</div>
+                            <div class="success-info">成功加入购物车</div>
                         </div>
                     </div>
                     <!-- 店铺评分 -->
@@ -83,7 +83,7 @@
                         <ul class="detail-score">
                             <li>绿色健康</li>
                             <li>综合评分<img src="../images/good.gif" alt="综合评分"><span>5</span>分</li>
-                            <li>联系我们<a href=""><img src="../images/contact.gif" alt="练习我们"></a></li>
+                            <li>联系我们<a href="#"><img src="../images/contact.gif" alt="练习我们"></a></li>
                         </ul>
                         <div class="score-info">
                             <p><span>店铺动态评分</span>     与行业相比</p>
@@ -188,7 +188,7 @@
                                 <dl>
                                     <dt><span></span></dt>
                                     <dd>
-                                        <p class="item-name"><a href="#">锐智H03护膝保暖老寒腿</a></p>
+                                        <p class="item-name"><a href="#">锐智H13护膝保暖老寒腿</a></p>
                                         <p>¥88.00</p>
                                         <span>出售：1笔</span>
                                     </dd>
@@ -198,7 +198,7 @@
                                 <dl>
                                     <dt><span></span></dt>
                                     <dd>
-                                        <p class="item-name"><a href="#">智慧眼-随时随地，尽在“</a></p>
+                                        <p class="item-name"><a href="#">天眼-随时随地，尽在“</a></p>
                                         <p>¥798.00</p>
                                         <span>出售：7笔</span>
                                     </dd>
@@ -208,7 +208,7 @@
                                 <dl>
                                     <dt><span></span></dt>
                                     <dd>
-                                        <p class="item-name"><a href="#">欧乐芬 天然口腔保健液 漱</a></p>
+                                        <p class="item-name"><a href="#">苏乐芬 天然口腔保健液 漱</a></p>
                                         <p>¥141.00</p>
                                         <span>出售：3笔</span>
                                     </dd>
@@ -242,21 +242,23 @@
                 </div>
                 <div class="right-detail">
                     <div class="details-nav">
-                        <ul class="details-subnav">
-                            <li>商品详情</li>
-                            <li>商品评价</li>
-                            <li>销售记录</li>
-                            <li>购买咨询</li>
-                        </ul>
+                        <div class="subnav-box">
+                            <ul class="details-subnav detail-subnav">
+                                <a href="#detail-img-item"><li>商品详情</li></a>
+                                <a href="#evaluate"><li>商品评价</li></a>
+                                <a href="#sales"><li>销售记录</li></a>
+                                <a href="#consult-info"><li>购买咨询</li></a>
+                            </ul>
+                        </div>
                         <!-- 品牌 -->
                         <div class="brand">
                             品牌:
                         </div>
                     </div>
-                    <img src="../images/detail-pic2.jpg" class="detail-img" alt="详细介绍图片">
+                    <img id="detail-img-item" src="../images/detail-pic2.jpg" class="detail-img" alt="详细介绍图片">
                     <div class="more-info">
                         <!-- 评价 -->
-                        <div class="evaluate">
+                        <div id="evaluate">
                             <ul class="details-subnav">
                                 <li>商品评价</li>
                             </ul>
@@ -277,7 +279,7 @@
                                     <a href="#">商品评价</a>
                                 </div>
                             </div>
-                            <ul class="details-subnav">
+                            <ul class="details-subnav level">
                                 <li>商品评价</li>
                                 <li>好评(0)</li>
                                 <li>中评(0)</li>
@@ -287,7 +289,7 @@
                                 <span class="no-content">暂无内容</span>
                             </div>
                         </div>
-                        <div class="sales-record">
+                        <div class="sales-record" id="sales">
                             <ul class="details-subnav">
                                 <li>销售记录</li>
                             </ul>
@@ -304,7 +306,7 @@
                                 <li>购买时间</li>
                             </ul>
                         </div>
-                        <div class="consult">
+                        <div class="consult" id="consult-info">
                             <ul class="details-subnav">
                                 <li>购买咨询</li>
                             </ul>

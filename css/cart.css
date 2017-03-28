@@ -13,11 +13,11 @@
 .ncc-flow li:nth-of-type(1) .hr { background: #27a9e3; }
 
 #wrap-cart { width: 100%; }
-#cart { width: 1000px; height: 433px; margin: 0 auto; font-size: 12px; }
+#cart { width: 1000px; margin: 0 auto; font-size: 12px; padding-bottom: 20px; }
 .cart-title { width: 100%; height: 64px; padding-top: 16px; }
 h3 { color: #555; font-family: arial, "微软雅黑"; font-size: 24px; font-weight: normal; }
 .cart-title span { color: #aaa; }
-.tb_product { width: 998px; height: 92px; border-top: 2px solid #aaa; border-bottom: 2px solid #aaa; border-left: 1px solid #ddd; border-right: 1px solid #ddd; font-size: 12px; color: #666; }
+.tb_product { width: 998px; border-top: 2px solid #aaa; border-bottom: 2px solid #aaa; border-left: 1px solid #ddd; border-right: 1px solid #ddd; font-size: 12px; color: #666; }
 .tb_title { width: 100%; height: 36px; border-bottom: 1px solid #ddd; }
 .tb_title div { float: left; height: 36px; line-height: 36px; }
 .check { width: 320px; }
@@ -26,16 +26,41 @@ h3 { color: #555; font-family: arial, "微软雅黑"; font-size: 24px; font-weig
 .price { width: 130px; }
 .num { width: 110px; }
 .sub { width: 108px; }
+
+/* 购物车商品信息 */
+.product-info { width: 998px; }
+.product { width: 998px; height: 56px; border-bottom: 1px solid #aaa; display: none; }
+.product div { float: left; height: 56px; line-height: 56px; }
+.choose { width: 60px; }
+.ck_product { position: relative; left: 20px; top: 2px; }
+.name-item { width: 520px; }
+.price-item { width: 100px; }
+.num-item { width: 120px; }
+.num-item input { width: 16px; height: 16px; color: #454545; font-size: 12px; }
+.minus { margin-left: 20px; }
+.num-item .num-info { width: 28px; height: 28px; border: 1px solid #ccc; position: relative; text-align: center; line-height: 24px; }
+.sub-item { width: 100px; text-align: center; }
+.handle { width: 98px; }
+.handle p { height: 28px; line-height: 28px; }
+.handle span { cursor: pointer; }
+.handle span:hover { text-decoration: underline; color: #e4393c; }
+.collection { text-align: center; }
+.delete { text-align: center; }
+
+/* 库存不足 */
+.hint-info { width: 120px; height: 48px; text-align: center; line-height: 48px; background: #000; opacity: 0.5; border-radius: 1px; transform: scale(0, 0); position: fixed; top: 0; bottom: 0; right: 0; left: 0; margin: auto; font-size: 14px; color: #fff; font-weight: bold; transition: 0.3s all; }
+
+
 .tb_content { width: 100%; height: 55px; position: relative; }
 .tb_content p { width: 200px; height: 18px; position: absolute; bottom: 15px; right: 20px; font-size: 15px; }
 .tb_content p span { font-size: 17px; color: #d93600; }
 
-.to_order { width: 200px; height: 36px; line-height: 36px; text-align: center; float: right; margin-top: 20px; background: #49afcd; }
+.to_order { width: 200px; height: 36px; line-height: 36px; text-align: center; margin-top: 20px; background: #49afcd; margin-left: 800px; }
 .to_order a { color: #fff; }
 .to_order a:hover { text-decoration: underline; }
 
 /* maybe you will like */
-.yml { width: 998px; height: 157px; border: 1px solid #eee; margin-top: 78px; font-family: "微软雅黑"; }
+.yml { width: 998px; height: 157px; border: 1px solid #eee; margin-top: 20px; font-family: "微软雅黑"; }
 .yml p { width: 980px; height: 36px; border-bottom: 1px solid #eee; padding-left: 18px; line-height: 36px; font-weight: bold; font-size: 14px; color: #666; }
 .yml div { width: 100%; height: 120px; position: relative; }
 .yml div span { display: block; width: 100px; height: 16px; line-height: 16px; text-align: center; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; color: #aaa; }
