@@ -2,6 +2,8 @@
 body { color: #777; }
 #logo { width: 1000px; font-size: 11px; border-bottom: 1px solid #f7f7f7; padding-top: 6px; height: 94px; }
 #logo .iconfont { font-size: 30px!important; }
+
+/* 订单页面 */
 .ncc-flow { width: 640px; height: 70px; float: right; position: relative; top: 15px; }
 .ncc-flow li { width: 160px; height: 70px; float: left; font-family: "微软雅黑"; text-align: center; color: #ccc; position: relative; }
 .ncc-flow .icon-bi { color: #27a9e3!important; }
