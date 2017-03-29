@@ -72,7 +72,7 @@ body { font-family: verdana,arial,"宋体"; }
 .minus { top: 10px; right: 16px; }
 .num-info { color: #777; font-weight: bold; }
 .add:hover, .minus:hover { border: 1px solid #c80000; }
-.hint-info, .success-info { background: #000; opacity: 0.8; position: fixed; right: 0; top: 0; left: 0; bottom: 0; margin: auto; width: 150px; height: 35px; font-size: 14px; color: #fff; text-align: center; line-height: 35px; border-radius: 2px; display: none; z-index: 1; }
+.hint-info, .success-info { background: #000; opacity: 0.8; position: fixed; right: 0; top: 0; left: 0; bottom: 0; margin: auto; width: 150px; height: 45px; font-size: 14px; color: #fff; text-align: center; line-height: 45px; border-radius: 2px; display: none; z-index: 1; }
 
 .buy-cart { font-size: 15px; }
 .buy { display: inline-block; width: 100px; height: 32px; border: 2px solid #f2f2f2; background: #ba7538; border-radius: 6px; text-align: center; line-height: 32px; color: #fff; margin-left: 18px; margin-right: 4px; cursor: pointer; }

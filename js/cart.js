@@ -10,7 +10,7 @@ $(function() {
     $.each(_products, function(index, element) {
         amount = element.num;
         _realNum = element.realNum;
-        
+
         $(".product:last").clone(true)
                           .data("products", element)
                           .show()
@@ -41,11 +41,34 @@ $(function() {
         var state = $(this).prop("checked");
         $(".ck_product").prop("checked", state);
         // 全选复选框计算所选商品总价
-        $.each(_products, function(index, element) {
-            // console.log(_products.length);
-            // total += _products.sub
-        });
+        if (state) {
+            $.each(_products, function(index, element) {
+                total += element.sub;
+            })
+
+            $(this).parents(".tb_product").children(".tb_content").children("p").children(".total").text(total);
+        }
+        if (!state) {
+            $(this).parents(".tb_product").children(".tb_content").children("p").children(".total").text(0);
+        }
     })
+
+    //
+    $(".ck_product").click(function() {
+        // 当前复选框选择计算所选商品总价
+        var state = $(this).prop("checked");
+        if (state) {
+            $.each(_products, function(index, element) {
+                // var currIndex = $.inArray($(this).parents(".product").children(".name-item").text(), _products);
+                total += element.sub;
+            });
+            $(this).parents(".tb_product").children(".tb_content").children("p").children(".total").text(total);
+        }
+        if (!state) {
+            $(this).parents(".tb_product").children(".tb_content").children("p").children(".total").text(0);
+        }
+    })
+
 
     // 改变数量
     $(".product-info").on("blur", ".num-info", function() {
