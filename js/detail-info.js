@@ -1,6 +1,27 @@
-$(function(e) {
-    e = e || event;
-    $("#wrap-head").load("head.html");
+$(function() {
+    // $("#wrap-head").load("head.html");
+    $.ajax("head.html").done(function(data) {
+        $.cookie.json = true;
+        var user = $.cookie("loginUser") || {};
+        if (!$.isEmptyObject(user)) {
+            $(data).appendTo("#wrap-head").find(".user_info").text(user.phone);
+            $(".login").css("display", "none");
+            $(".user-box").css("display", "inline-block");
+            $(".exit-box").css("display", "inline-block");
+            $(".register").css("display", "none");
+        } else {
+            $(data).appendTo("#wrap-head");
+        }
+
+        /* 退出登录 */
+        $("#header .exit").click(function() {
+            $("#wrap-head").empty();
+            user = {};
+            $.cookie("loginUser", user, {expries: 7, path: "/"});
+            $(data).appendTo("#wrap-head");
+        })
+    })
+
     $("#wrap-foot").load("foot.html");
 
     // 放大镜
@@ -44,6 +65,12 @@ $(function(e) {
 
     // 添加到购物车
     $(".addtocart").click(function() {
+        $.cookie.json = true;
+        var user = $.cookie("loginUser") || {};
+        if ($.isEmptyObject(user)) {
+            location = "login.html";
+            return;
+        }
 
         var _name = $(".gname").text(),
             _price = parseFloat($(".item-price").text().slice(1)),
@@ -64,7 +91,6 @@ $(function(e) {
             }, 2000)
         }
 
-        $.cookie.json = true;
         var _products = $.cookie("products") || [];
 
         var index = exists(_name, _products);

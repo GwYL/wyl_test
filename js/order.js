@@ -1,4 +1,23 @@
 $(function() {
+    $.ajax("head.html").done(function(data) {
+        $.cookie.json = true;
+        var user = $.cookie("loginUser") || {};
+        if (!$.isEmptyObject(user)) {
+            $("#header").find(".user_info").text(user.phone);
+            $(".login").css("display", "none");
+            $(".user-box").css("display", "inline-block");
+            $(".exit-box").css("display", "inline-block");
+            $(".register").css("display", "none");
+        }
+
+        /* 退出登录 */
+        $("#header .exit").click(function() {
+            user = {};
+            $.cookie("loginUser", user, {expries: 7, path: "/"});
+            location = "index.html";
+        })
+    })
+
     $("#wrap-foot").load("foot.html");
 
     // 保存所有地址的对象

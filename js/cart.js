@@ -1,5 +1,25 @@
 $(function() {
+    $.ajax("head.html").done(function(data) {
+        $.cookie.json = true;
+        var user = $.cookie("loginUser") || {};
+        if (!$.isEmptyObject(user)) {
+            $("#header").find(".user_info").text(user.phone);
+            $(".login").css("display", "none");
+            $(".user-box").css("display", "inline-block");
+            $(".exit-box").css("display", "inline-block");
+            $(".register").css("display", "none");
+        }
+
+        /* 退出登录 */
+        $("#header .exit").click(function() {
+            user = {};
+            $.cookie("loginUser", user, {expries: 7, path: "/"});
+            location = "index.html";
+        })
+    })
+
     $("#wrap-foot").load("foot.html");
+
 
     $.cookie.json = true;
     var _products = $.cookie("products") || [],
@@ -38,29 +58,34 @@ $(function() {
 
     // 全选
     $("#all_check").click(function() {
+        total = 0;
         var state = $(this).prop("checked");
         $(".ck_product").prop("checked", state);
         // 全选复选框计算所选商品总价
-        if (state) {
+        if (state && $(".product-info") !== "") {
             $.each(_products, function(index, element) {
                 total += element.sub;
             })
 
             $(this).parents(".tb_product").children(".tb_content").children("p").children(".total").text(total);
         }
-        if (!state) {
+        if (!state || $(".product-info") === "") {
             $(this).parents(".tb_product").children(".tb_content").children("p").children(".total").text(0);
         }
     })
 
     //
     $(".ck_product").click(function() {
+        total = 0;
         // 当前复选框选择计算所选商品总价
+        var currMoney = null;
         var state = $(this).prop("checked");
         if (state) {
             $.each(_products, function(index, element) {
                 // var currIndex = $.inArray($(this).parents(".product").children(".name-item").text(), _products);
                 total += element.sub;
+                // currMoney = parseFloat($(this).parents(".product").children(".sub-item").children(".sub-info").text());
+                // console.log(currMoney);
             });
             $(this).parents(".tb_product").children(".tb_content").children("p").children(".total").text(total);
         }

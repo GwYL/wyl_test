@@ -1,4 +1,9 @@
 #wrap-header { background: #fefefe; }
+#header .user-box { display: none; color: red; cursor: pointer; margin-left: 4px; }
+#header .user-box img { position: relative; top: 4px; margin: 0 2px; }
+#header .welcome { display: inline-block; }
+#header .exit { color: red; cursor: pointer; }
+#header .exit-box { display: none; }
 
 #logo { width: 1000px; font-size: 11px; border-bottom: 1px solid #f7f7f7; padding-top: 6px; height: 94px; }
 #logo .iconfont { font-size: 30px!important; }

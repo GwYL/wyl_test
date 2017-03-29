@@ -12,6 +12,11 @@ body { font-family: "Microsoft Yahei",arial,宋体,"Helvetica Neue",Helvetica,ST
 #wrap-header { width: 100%; border-bottom: 1px solid #cecece; background: #f2f2f2; }
 #header { width: 1200px; height: 40px; margin: 0 auto; font-family: Arial,"宋体"; line-height: 40px; font-size: 12px; }
 #header p { color: #666; float: left; }
+#header .user-box { display: none; color: red; cursor: pointer; margin-left: 4px; }
+#header .user-box img { position: relative; top: 4px; margin: 0 2px; }
+#header .welcome { display: inline-block; }
+#header .exit { color: red; cursor: pointer; }
+#header .exit-box { display: none; }
 #header p a { color: red; }
 #header p .ml { margin-left: 12px; }
 #header ul { float: right; }
