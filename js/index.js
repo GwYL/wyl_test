@@ -131,7 +131,7 @@ $(function() {
         // $(".cover").animate({opacity: 0}, 400 );
     })
 
-    /* tab 切换 */
+    /* 热卖热评tab 切换 */
     $(".tab_content").hide();
     $(".tabs").children().eq(0).addClass("active").show();
     $(".tab_content").eq(0).show();
@@ -155,7 +155,7 @@ $(function() {
         $(".active").children().css("color", "#e4393c");
         $(".tab_content").hide(); //隐藏全部标签内容
         var activeTab = $(this).find("a").attr("href"); //找到所属属性值来识别活跃选项卡和内容
-        $(activeTab).fadeIn(4); //使内容消失
+        $(activeTab).fadeIn(100); //使内容消失
         return false;
     });
 
