@@ -1,0 +1,572 @@
+{
+    "list": [
+        {
+            "title": "健康食品",
+            "name_contents": {
+                "name_list": [
+                    {"name": "大米"},
+                    {"name": "面粉"},
+                    {"name": "食用油"},
+                    {"name": "有机食品"}
+                ]
+            },
+            "left_content": {
+                "sublist": [
+                    {
+                        "subtitle": "米面粮油",
+                        "main": {
+                            "contents": [
+                                {"content": "大米"},
+                                {"content": "面粉"},
+                                {"content": "食用油"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "南北干货",
+                        "main": {
+                            "contents": [
+                                {"content": "枣"},
+                                {"content": "干果"},
+                                {"content": "山菌"},
+                                {"content": "蜜饯"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "调味品",
+                        "main": {
+                            "contents": [
+                                {"content": "调味酱"},
+                                {"content": "下饭菜"},
+                                {"content": "红糖"},
+                                {"content": "厨房调料"},
+                                {"content": "方便食品"},
+                                {"content": "进口酱料"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "休闲食品",
+                        "main": {
+                            "contents": [
+                                {"content": "糖"},
+                                {"content": "饼干"},
+                                {"content": "休闲食品"},
+                                {"content": "无糖食品"}
+                            ]
+                        }
+                    }
+                ]
+            },
+            "right_content": {
+                "sublist": [
+                    {
+                        "subtitle": "健康杂粮",
+                        "main": {
+                            "contents": [
+                                {"content": "有机食品"},
+                                {"content": "原生态"},
+                                {"content": "普通杂粮"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "有机/进口食品",
+                        "main": {
+                            "contents": [
+                                {"content": "有机食品"},
+                                {"content": "进口食品"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "冲调饮料",
+                        "main": {
+                            "contents": [
+                                {"content": "蜂蜜"},
+                                {"content": "花草茶"},
+                                {"content": "沙棘"},
+                                {"content": "饮料"},
+                                {"content": "饮用水"},
+                                {"content": "乳制品/麦片"}
+                            ]
+                        }
+                    }
+                ]
+            }
+        }, {
+            "title": "功能营养",
+            "name_contents": {
+                "name_list": [
+                    {"name": "苦芥系列"},
+                    {"name": "降压系列"},
+                    {"name": "菊粉"}
+                ]
+            },
+            "left_content": {
+                "sublist": [
+                    {
+                        "subtitle": "调节三高",
+                        "main": {
+                            "contents": [
+                                {"content": "苦芥系列"},
+                                {"content": "降压系列"},
+                                {"content": "菊粉"},
+                                {"content": "降糖系列"},
+                                {"content": "降脂系列"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "抗氧化",
+                        "main": {
+                            "contents": [
+                                {"content": "叶绿素"},
+                                {"content": "胶原蛋白"},
+                                {"content": "银杏叶/番茄红素"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "养容养颜",
+                        "main": {
+                            "contents": [
+                                {"content": "维生素E"},
+                                {"content": "花青素"},
+                                {"content": "SOD"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "孕妇/母婴",
+                        "main": {
+                            "contents": [
+                                {"content": "叶酸"},
+                                {"content": "铁/锌/矿物质"},
+                                {"content": "孕妇相关"},
+                                {"content": "婴儿相关"}
+                            ]
+                        }
+                    }
+                ]
+            },
+            "right_content": {
+                "sublist": [
+                    {
+                        "subtitle": "预防辐射",
+                        "main": {
+                            "contents": [
+                                {"content": "黄花系列"},
+                                {"content": "螺旋藻"},
+                                {"content": "葡萄籽"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "肝脏养护",
+                        "main": {
+                            "contents": [
+                                {"content": "阿胶"},
+                                {"content": "牡蛎"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "调节免疫",
+                        "main": {
+                            "contents": [
+                                {"content": "牛奶"},
+                                {"content": "牛蒡系列"},
+                                {"content": "维生素B"},
+                                {"content": "人参/西洋参"},
+                                {"content": "鱼油磷脂"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "肠胃养护",
+                        "main": {
+                            "contents": [
+                                {"content": "益生菌"},
+                                {"content": "功能茶饮"},
+                                {"content": "膳食纤维"}
+                            ]
+                        }
+                    }
+                ]
+            }
+        },{
+            "title": "生鲜食品",
+            "name_contents": {
+                "name_list": [
+                    {"name": "水果"},
+                    {"name": "蔬菜"},
+                    {"name": "牛奶/酸奶"}
+                ]
+            },
+            "left_content": {
+                "sublist": [
+                    {
+                        "subtitle": "水果蔬菜",
+                        "main": {
+                            "contents": [
+                                {"content": "水果"},
+                                {"content": "蔬菜"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "海鲜水产",
+                        "main": {
+                            "contents": [
+                                {"content": "远洋海捕"},
+                                {"content": "鱼/虾/蟹/贝"},
+                                {"content": "干海产品"},
+                                {"content": "即食产品"}
+                            ]
+                        }
+                    }
+                ]
+            },
+            "right_content": {
+                "sublist": [
+                    {
+                        "subtitle": "牛奶蛋禽",
+                        "main": {
+                            "contents": [
+                                {"content": "牛奶/酸奶"},
+                                {"content": "鸡蛋/鸭蛋"},
+                                {"content": "鸡鸭禽类"},
+                                {"content": "乳制品"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "低温/加工食品",
+                        "main": {
+                            "contents": [
+                                {"content": "低温饮品"},
+                                {"content": "加工食品"}
+                            ]
+                        }
+                    }
+                ]
+            }
+        },{
+            "title": "智能健康",
+            "name_contents": {
+                "name_list": [
+                    {"name": "血压仪"},
+                    {"name": "血糖仪"},
+                    {"name": "耳温枪"},
+                    {"name": "体脂"}
+                ]
+            },
+            "left_content": {
+                "sublist": [
+                    {
+                        "subtitle": "健康检测",
+                        "main": {
+                            "contents": [
+                                {"content": "血压仪"},
+                                {"content": "血糖仪"},
+                                {"content": "耳温枪"},
+                                {"content": "体脂"},
+                                {"content": "健康设备家庭装"},
+                                {"content": "智能手环"},
+                                {"content": "智能手表"},
+                                {"content": "其他可穿戴设备"},
+                                {"content": "体重秤"}
+                            ]
+                        }
+                    }
+                ]
+            },
+            "right_content": {
+                "sublist": [
+                    {
+                        "subtitle": "其他配件",
+                        "main": {
+                            "contents": [
+                                {"content": "电子产品"},
+                                {"content": "充电器"},
+                                {"content": "USB接收器"},
+                                {"content": "血糖试条"},
+                                {"content": "血糖针"}
+                            ]
+                        }
+                    }
+                ]
+            }
+        },{
+            "title": "健康理疗",
+            "name_contents": {
+                "name_list": [
+                    {"name": "中国灸"},
+                    {"name": "中医器材"},
+                    {"name": "养生器械"}
+                ]
+            },
+            "left_content": {
+                "sublist": [
+                    {
+                        "subtitle": "健康保健",
+                        "main": {
+                            "contents": [
+                                {"content": "中国灸"},
+                                {"content": "中医器材"},
+                                {"content": "养生器械"},
+                                {"content": "理疗器材"},
+                                {"content": "康复器材"},
+                                {"content": "呼吸制氧"}
+                            ]
+                        }
+                    }
+                ]
+            },
+            "right_content": {
+                "sublist": [
+                    {
+                        "subtitle": "运动器材",
+                        "main": {
+                            "contents": [
+                                {"content": "健身器械"},
+                                {"content": "户外跑步"},
+                                {"content": "日常训练"},
+                                {"content": "球类"},
+                                {"content": "运动护具"}
+                            ]
+                        }
+                    }
+                ]
+            }
+        },{
+            "title": "生活用品",
+            "name_contents": {
+                "name_list": [
+                    {"name": "休闲运动包"},
+                    {"name": "登山包"},
+                    {"name": "旅行包"}
+                ]
+            },
+            "left_content": {
+                "sublist": [
+                    {
+                        "subtitle": "箱包",
+                        "main": {
+                            "contents": [
+                                {"content": "休闲运动包"},
+                                {"content": "登山包"},
+                                {"content": "旅行包"},
+                                {"content": "双肩包"},
+                                {"content": "卡包/零钱包/钱包"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "办公/电脑",
+                        "main": {
+                            "contents": [
+                                {"content": "耳机"}
+                            ]
+                        }
+                    }
+                ]
+            },
+            "right_content": {
+                "sublist": [
+                    {
+                        "subtitle": "日常用品",
+                        "main": {
+                            "contents": [
+                                {"content": "美容护肤"},
+                                {"content": "孕妇/母婴"},
+                                {"content": "厨房用品"},
+                                {"content": "日用洗护"},
+                                {"content": "卫浴用品"},
+                                {"content": "净化除味"},
+                                {"content": "洗晒熨烫/清洁工具"},
+                                {"content": "护眼照明"},
+                                {"content": "家庭药箱"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "家居家纺",
+                        "main": {
+                            "contents": [
+                                {"content": "凉席"},
+                                {"content": "床上用品"},
+                                {"content": "靠垫抱枕"},
+                                {"content": "毛巾浴巾"},
+                                {"content": "功能家纺用品"},
+                                {"content": "健康家具"},
+                                {"content": "健康装修"},
+                                {"content": "室内绿植"}
+                            ]
+                        }
+                    }
+                ]
+            }
+        },{
+            "title": "健康服务",
+            "name_contents": {
+                "name_list": [
+                    
+                ]
+            },
+            "left_content": {
+                "sublist": [
+                    {
+                        "subtitle": "健康体检",
+                        "main": {
+                            "contents": [
+                                
+                            ]
+                        }
+                    }, {
+                        "subtitle": "预约挂号",
+                        "main": {
+                            "contents": [
+                                
+                            ]
+                        }
+                    }
+                ]
+            },
+            "right_content": {
+                "sublist": [
+                    {
+                        "subtitle": "中医服务",
+                        "main": {
+                            "contents": [
+                                
+                            ]
+                        }
+                    }
+                ]
+            }
+        },{
+            "title": "周边服务",
+            "name_contents": {
+                "name_list": [
+                    {"name": "家政服务"},
+                    {"name": "健康理疗"}
+                ]
+            },
+            "left_content": {
+                "sublist": [
+                    {
+                        "subtitle": "家政服务",
+                        "main": {
+                            "contents": [
+                                {"content": "保姆"},
+                                {"content": "钟点工"},
+                                {"content": "保洁"},
+                                {"content": "疏通"},
+                                {"content": "月嫂"},
+                                {"content": "吸油烟机"},
+                                {"content": "水箱清洗"},
+                                {"content": "空调清洗"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "丽人",
+                        "main": {
+                            "contents": [
+                                {"content": "美容/SPA"},
+                                {"content": "美发"},
+                                {"content": "美甲"},
+                                {"content": "瘦身纤体"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "生活服务",
+                        "main": {
+                            "contents": [
+                                {"content": "送水"},
+                                {"content": "回收"},
+                                {"content": "洗衣店"},
+                                {"content": "修鞋"},
+                                {"content": "家电维修"},
+                                {"content": "电脑维修"},
+                                {"content": "房屋维修"},
+                                {"content": "手机相关"},
+                                {"content": "快照冲印"},
+                                {"content": "开锁换锁"},
+                                {"content": "宠物"},
+                                {"content": "快递"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "酒店住宿",
+                        "main": {
+                            "contents": [
+                                {"content": "经济型"},
+                                {"content": "精品酒店"},
+                                {"content": "青年旅舍"},
+                                {"content": "公寓"},
+                                {"content": "客栈"},
+                                {"content": "度假村"},
+                                {"content": "农家院"},
+                                {"content": "五星级"},
+                                {"content": "四星级"},
+                                {"content": "三星级"}
+                            ]
+                        }
+                    }
+                ]
+            },
+            "right_content": {
+                "sublist": [
+                    {
+                        "subtitle": "健康理疗",
+                        "main": {
+                            "contents": [
+                                {"content": "足疗按摩"},
+                                {"content": "中医养生"},
+                                {"content": "汗蒸馆"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "休闲娱乐",
+                        "main": {
+                            "contents": [
+                                {"content": "洗浴"},
+                                {"content": "咖啡厅"},
+                                {"content": "茶楼"},
+                                {"content": "棋牌室"},
+                                {"content": "旅游"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "邻里互助",
+                        "main": {
+                            "contents": [
+                                {"content": "看护"},
+                                {"content": "法律"},
+                                {"content": "医生"},
+                                {"content": "家厨"},
+                                {"content": "调理师"},
+                                {"content": "家修小匠"},
+                                {"content": "学车教练"},
+                                {"content": "家教"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "运动健身",
+                        "main": {
+                            "contents": [
+                                {"content": "瑜伽"},
+                                {"content": "舞蹈"},
+                                {"content": "羽毛球馆"},
+                                {"content": "运动场馆"},
+                                {"content": "健身房"}
+                            ]
+                        }
+                    }, {
+                        "subtitle": "美食",
+                        "main": {
+                            "contents": [
+                                {"content": "火锅"},
+                                {"content": "自助餐"},
+                                {"content": "面包甜点"},
+                                {"content": "中餐"},
+                                {"content": "西餐"},
+                                {"content": "韩餐"},
+                                {"content": "日料"},
+                                {"content": "营养配餐"}
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
