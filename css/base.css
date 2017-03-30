@@ -19,9 +19,18 @@ body { font-family: "Microsoft Yahei",arial,宋体,"Helvetica Neue",Helvetica,ST
 #header .exit-box { display: none; }
 #header p a { color: red; }
 #header p .ml { margin-left: 12px; }
-#header ul { float: right; }
-#header ul li { list-style: none; float: left; padding: 0 20px;}
-#header ul li a { color: #333; }
+#header .header_nav { float: right; }
+#header .header_nav li { list-style: none; float: left; padding: 0 20px; position: relative; }
+#header .header_nav li a { color: #333; }
+#header .header_nav li a:hover { text-decoration: underline; }
+#header .header_nav li img { position: relative; bottom: 2px; margin-left: 4px; }
+#header .cart-num { display: block; width: 14px; height: 14px; border-radius: 50%; position: absolute; background: red; color: #fff; font-size: 12px; text-align: center; line-height: 14px; top: 4px; left: 8px; display: none; }
+#header .dropdown { width: 105px; padding: 0; position: absolute; z-index: 1; border: 1px solid #cecece; border-top: 0; left: 0px; top: 40px; background: #fff; display: none; }
+#header .header_nav .dropdown p { width: 100%; line-height: 28px; text-align: center; clear: both; }
+#header .header_nav .dropdown p a { color: #454545; }
+#header .header_nav .dropdown p:hover a { color: #e4306c; text-decoration: none; }
+#header .header_nav li:hover .dropdown { display: block; }
+#header .header_nav .dropdown img { display: block; left: 25px; }
 
 /*logo*/
 #wrap-logo { width: 100%; }
@@ -30,8 +39,12 @@ body { font-family: "Microsoft Yahei",arial,宋体,"Helvetica Neue",Helvetica,ST
 #search { width: 440px; height: 100px; float: left; margin-left: 190px; padding-top: 8px; }
 #search ul { width: 100px; height: 20px; }
 #search ul li { height: 18px; float: left; font-size: 11px; padding: 0 12px; cursor: pointer; padding-top: 2px; }
-#search ul li:first-child { background: #23c067; color: #fff; }
+#search ul .active-item { background: #23c067; }
+#search ul .active-item a { color: #fff; }
 #search .search-form { clear: both; position: relative;}
+#search .tab a { color: #454545; }
+#products-info, #stores-info { float: left; }
+#stores-info { display: none; }
 #keyword { width: 369px; height: 36px; border: 3px solid #23c067; border-right: 0; outline: none; padding-left: 4px; }
 #btn { width: 68px; height: 42px; border: 0; background: #23c067; outline: none; position: absolute; right: 0; top: 0; color: #fff; font-size: 15px; cursor: pointer; }
 .hot-keyword { margin-top: 4px; width: 100%; color: #999; font-family: 'Microsoft YaHei'; font-size: 11px; }

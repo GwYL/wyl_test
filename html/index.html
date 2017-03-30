@@ -135,13 +135,12 @@
                     <div class="goods-items"></div>
                 </div>
             </div>
+            <div id="floor_box"></div>
             <img src="../images/ad-pic4.jpg" class="ad-pic" alt="广告图片">
         </div>
     </div>
     <!-- 底部 -->
-    <div id="wrap-foot">
-
-    </div>
+    <div id="wrap-foot"></div>
     <ul id="floor-bar">
         <li>
             <a href="#f1">1F</a>
@@ -169,6 +168,26 @@
         <% } %>
     </script>
     <!-- 楼层模板 -->
+    <script id="floor_item" type="text/html">
+        <% for (var i = 0; i < f_id.length; i ++) { %>
+        <div id="f<%= f_list[i] %>" class="floor"></div>
+            <div class="left-floor">
+                <div class="left-title">
+                    <span><%= f_list[i] %>F</span>
+                    <p class="floor-title"><%= fTitle_list[i] %></p>
+                </div>
+                <img src="../images/side-pic<%= f_list[i] %>.png" alt="侧边栏标题图片">
+            </div>
+            <div class="right-floor">
+                <div class="right-title">
+                    <p><%= rTitle_list[i] %></p>
+                </div>
+                <div class="goods-items"><% include("f_box") %></div>
+            </div>
+        </div>
+        <% } %>
+    </script>
+    <!-- 楼层货物模板 -->
     <script id="f_box" type="text/html">
         <% for (var i = 0; i < list.length; i ++) { %>
             <dl class="item-info">
@@ -183,6 +202,7 @@
     <script src="../js/jquery-1.12.4.min.js" charset="utf-8"></script>
     <script src="../js/jquery.cookie.js" charset="utf-8"></script>
     <script src="../js/template-native.js" charset="utf-8"></script>
+    <script src="../js/public.js" charset="utf-8"></script>
     <script src="../js/index.js" charset="utf-8"></script>
 </body>
 </html>

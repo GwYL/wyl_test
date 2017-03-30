@@ -1,29 +1,4 @@
 $(function() {
-    // 加载公共部分
-    // $("#wrap-head").load("head.html");
-    $.ajax("head.html").done(function(data) {
-        $.cookie.json = true;
-        var user = $.cookie("loginUser") || {};
-        if (!$.isEmptyObject(user)) {
-            $(data).appendTo("#wrap-head").find(".user_info").text(user.phone);
-            $(".login").css("display", "none");
-            $(".user-box").css("display", "inline-block");
-            $(".exit-box").css("display", "inline-block");
-            $(".register").css("display", "none");
-        } else {
-            $(data).appendTo("#wrap-head");
-        }
-
-        /* 退出登录 */
-        $("#header .exit").click(function() {
-            $("#wrap-head").empty();
-            user = {};
-            $.cookie("loginUser", user, {expries: 7, path: "/"});
-            $(data).appendTo("#wrap-head");
-        })
-    })
-
-    $("#wrap-foot").load("foot.html");
 
     /* 轮播图 */
     var lis = $("#carousel li"),
@@ -50,7 +25,7 @@ $(function() {
         clearInterval(timer);
     })
     $("#wrap-banner").mouseleave(function() {
-        tiemr = setInterval(move, 5000);
+        timer = setInterval(move, 5000);
     })
 
     function move() {
@@ -85,6 +60,20 @@ $(function() {
     }
     var thtml3 = template("hot-goods", t3);
     $("#tab3").html(thtml3);
+
+    // 楼层框架
+    // var f_content = {
+    //     title: "楼层",
+    //     f_list: ["1", "2", "3", "4"],
+    //     fTitle_list: ["商城自营", "健康食品", "生活用品", "健康理疗"],
+    //     rTitle_list: ["营养/保健", "商品推荐", "商品推荐", "商品推荐"],
+    //     list: {
+    //         title: "物品",
+    //         content: ["阳光社区牛蒡佐伴1", "阳光社区牛蒡佐伴2", "阳光社区牛蒡佐伴3", "阳光社区牛蒡佐伴4", "阳光社区牛蒡佐伴5", "阳光社区牛蒡佐伴6", "阳光社区牛蒡佐伴7", "阳光社区牛蒡佐伴8", "阳光社区牛蒡佐伴9", "阳光社区牛蒡佐伴10"]
+    //     }
+    // }
+    // var f_html = template("floor_item", f_content);
+    // $("#floor_box").html(f_html);
 
     // 楼层-->模板添加内容
     var data_f1 = {
@@ -149,13 +138,13 @@ $(function() {
     //点击事件
     $(".tabs li").mouseenter(function() {
         $(".tabs li").children().css("color", "#454545");
-        $(".tabs li").removeClass("active"); //移除class="active"属性
-        $(this).addClass("active"); //添加class="active"到选择标签中
+        $(".tabs li").removeClass("active");
+        $(this).addClass("active");
         $(this).append(tab_bg);
         $(".active").children().css("color", "#e4393c");
-        $(".tab_content").hide(); //隐藏全部标签内容
-        var activeTab = $(this).find("a").attr("href"); //找到所属属性值来识别活跃选项卡和内容
-        $(activeTab).fadeIn(100); //使内容消失
+        $(".tab_content").hide();
+        var activeTab = $(this).find("a").attr("href");
+        $(activeTab).css("display", "block");
         return false;
     });
 

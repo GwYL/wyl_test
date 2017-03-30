@@ -4,6 +4,20 @@
 #header .welcome { display: inline-block; }
 #header .exit { color: red; cursor: pointer; }
 #header .exit-box { display: none; }
+#header p a { color: red; }
+#header p .ml { margin-left: 12px; }
+#header .header_nav { float: right; }
+#header .header_nav li { list-style: none; float: left; padding: 0 20px; position: relative; }
+#header .header_nav li a { color: #333; }
+#header .header_nav li a:hover { text-decoration: underline; }
+#header .header_nav li img { position: relative; bottom: 2px; margin-left: 4px; }
+#header .cart-num { display: block; width: 14px; height: 14px; border-radius: 50%; position: absolute; background: red; color: #fff; font-size: 12px; text-align: center; line-height: 14px; top: 4px; left: 8px; display: none; }
+#header .dropdown { width: 105px; padding: 0; position: absolute; z-index: 1; border: 1px solid #cecece; border-top: 0; left: 0px; top: 40px; background: #fff; display: none; }
+#header .header_nav .dropdown p { width: 100%; line-height: 28px; text-align: center; clear: both; }
+#header .header_nav .dropdown p a { color: #454545; }
+#header .header_nav .dropdown p:hover a { color: #e4306c; text-decoration: none; }
+#header .header_nav li:hover .dropdown { display: block; }
+#header .header_nav .dropdown img { display: block; left: 25px; }
 
 #logo { width: 1000px; font-size: 11px; border-bottom: 1px solid #f7f7f7; padding-top: 6px; height: 94px; }
 #logo .iconfont { font-size: 30px!important; }

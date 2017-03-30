@@ -2,15 +2,74 @@
 <div id="wrap-header">
     <div id="header">
         <!-- 欢迎 -->
-        <p><span class="welcome">您好<span class="user-box"><span class="user_info"></span><img src="../images/login-vo.png" alt="用户等级"></span>，<span></span>欢迎来到</span><span><a href="index.html">阳光商城</a></span><span class="exit-box">[<span class="exit">退出</span>]</span><span class="login">[<a href="login.html">登录</a>]</span><span class="register">[<a href="register.html">注册</a>]</span><span class="ml"><a href="#">邀请有礼</a></span></p>
+        <p>
+            <span class="welcome">
+                您好
+                    <span class="user-box">
+                        <span class="user_info"></span>
+                        <img src="../images/login-vo.png" alt="用户等级">
+                    </span>
+                ，欢迎来到
+            </span>
+            <span><a href="index.html">阳光商城</a></span>
+            <span class="exit-box">[<span class="exit">退出</span>]</span>
+            <span class="login">[<a href="login.html">登录</a>]</span>
+            <span class="register">[<a href="register.html">注册</a>]</span>
+            <span class="ml"><a href="#">邀请有礼</a></span>
+        </p>
         <!-- 帮助收藏 -->
-        <ul>
-            <li><a href="#">免费开店</a></li>
-            <li><a href="#">我的订单</a></li>
-            <li><a href="cart.html">我的购物车</a></li>
+        <ul class="header_nav">
+            <li>
+                <a href="#">免费开店<img src="../images/header-nav.gif"></a>
+                <div class="dropdown">
+                    <p>
+                        <a href="#">商家入住</a>
+                    </p>
+                    <p>
+                        <a href="#">招商入住</a>
+                    </p>
+                </div>
+            </li>
+            <li><a href="order.html">我的订单<img src="../images/header-nav.gif"></a>
+                <div class="dropdown">
+                    <p>
+                        <a href="#">代付款订单</a>
+                    </p>
+                    <p>
+                        <a href="#">待确认收货</a>
+                    </p>
+                    <p>
+                        <a href="#">待评价交易</a>
+                    </p>
+                </div>
+            </li>
+            <li><span class="cart-num"></span><a href="cart.html">我的购物车<img src="../images/header-nav.gif"></a></li>
             <li><a href="#">我的收藏</a></li>
-            <li><a href="#">帮助中心</a></li>
-            <li><a href="#">关注我们</a></li>
+            <li><a href="#">帮助中心<img src="../images/header-nav.gif"></a>
+                <div class="dropdown">
+                    <p>
+                        <a href="#">帮助中心</a>
+                    </p>
+                    <p>
+                        <a href="#">售后服务</a>
+                    </p>
+                    <p>
+                        <a href="#">客服中心</a>
+                    </p>
+                </div>
+            </li>
+            <li><a href="#">关注我们<img src="../images/header-nav.gif"></a>
+                <div class="dropdown">
+                    <p>
+                        <a href="#">官方微信</a>
+                        <img src="../images/wechat_pic1.png">
+                    </p>
+                    <p>
+                        <a href="#">手机版</a>
+                        <img src="../images/wechat_pic2.png">
+                    </p>
+                </div>
+            </li>
         </ul>
     </div>
 </div>
@@ -20,11 +79,12 @@
         <a href="index.html"><img src="../images/explorer.png" alt="logo" class="logo_item"></a>
         <div id="search">
             <ul class="tab">
-                <li>商品</li>
-                <li>店铺</li>
+                <li class="products"><a href="#products-info">商品</a></li>
+                <li class="stores"><a href="#stores-info">店铺</a></li>
             </ul>
             <form class="search-form" action="index.html" method="get">
-                <input type="text" id="keyword" name="keyword" value="" placeholder="请输入您想要搜索的商品关键字">
+                <div id="products-info"><input type="text" id="keyword" name="keyword" value="" placeholder="请输入您想要搜索的商品关键字"></div>
+                <div id="stores-info"><input type="text" id="keyword" name="keyword" value="" placeholder="请输入您想要搜索的店铺关键字"></div>
                 <input type="submit" id="btn" name="" value="搜索">
             </form>
             <div class="hot-keyword">

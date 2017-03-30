@@ -1,24 +1,4 @@
 $(function() {
-    $.ajax("head.html").done(function(data) {
-        $.cookie.json = true;
-        var user = $.cookie("loginUser") || {};
-        if (!$.isEmptyObject(user)) {
-            $("#header").find(".user_info").text(user.phone);
-            $(".login").css("display", "none");
-            $(".user-box").css("display", "inline-block");
-            $(".exit-box").css("display", "inline-block");
-            $(".register").css("display", "none");
-        }
-
-        /* 退出登录 */
-        $("#header .exit").click(function() {
-            user = {};
-            $.cookie("loginUser", user, {expries: 7, path: "/"});
-            location = "index.html";
-        })
-    })
-
-    $("#wrap-foot").load("foot.html");
 
     // 保存所有地址的对象
 	var addresses = {};
@@ -39,6 +19,7 @@ $(function() {
 
 		initProvince();
 	});
+
 
 	// 当省份选择改变时：
 	$("#province").change(initCity);
@@ -85,4 +66,68 @@ $(function() {
 
 		$("#district").empty().append(html);
 	}
+
+    $.cookie.json = true;
+    var _products = $.cookie("products") || [],
+        total = null;
+
+    $.each(_products, function(index, element) {
+        total += element.sub;
+        $(".product:last").clone(true)
+                          .data("products", element)
+                          .show()
+                          .appendTo(".products-info")
+                          .children(".name-item").text(element.name).end()
+                          .children(".price-item").text("￥" + element.price + ".00").end()
+                          .children(".num-item").text(element.num).end()
+                          .children(".sub-item").children(".sub-info").text(element.sub);
+
+    })
+
+    $(".total").text(total);
+
+    var isExist = true; // 默认存在
+    $(".save-btn").click(function() {
+        if (isExist) {
+            $.post("../php/order.php", {username: $("#username").val(), area: $("#area").val(), province: $("#province option:selected").val(), city: $("#city option:selected").val(), district: $("#district option:selected").val(), tel: $("#tel").val()}).then(
+                function(data) {
+                    data = JSON.parse(data);
+                }
+            )
+            isExist = true;
+        }
+        return false;
+    })
+
+    $(".cancel").click(function() {
+        $("#username").val() = "";
+        $("#area").val() = "";
+        $("#province option:selected").val() = "";
+        $("#city option:selected").val() = "";
+        $("#district option:selected").val() = "";
+        $("#tel").val() = "";
+        return false;
+    })
+
+    // $("#submit").click(function() {
+    //     if ($("#agree").is(":checked")) {
+    //         if (!isExist) {
+    //             $.post("../php/register.php", {phone: $("#phone").val(), password: $("#password").val(), email: $("#email").val()}).then(
+    //                 function(data) {
+    //                     data = JSON.parse(data);
+    //                     console.log("response:",data);
+    //                     console.log(data.status);
+    //                     if (data.status === 1) {
+    //                         console.log("success");
+    //                         window.location = "login.html";
+    //                     }
+    //                     else {
+    //                         $("#register_info").text("用户注册失败, " + data.message);
+    //                     }
+    //                 }
+    //             );
+    //             isExist = true;
+    //         }
+    //     }
+    // })
 })

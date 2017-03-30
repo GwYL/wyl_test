@@ -1,28 +1,4 @@
 $(function () {
-    // $("#wrap-head").load("head.html");
-    $.ajax("head.html").done(function(data) {
-        $.cookie.json = true;
-        var user = $.cookie("loginUser") || {};
-        if (!$.isEmptyObject(user)) {
-            $(data).appendTo("#wrap-head").find(".user_info").text(user.phone);
-            $(".login").css("display", "none");
-            $(".user-box").css("display", "inline-block");
-            $(".exit-box").css("display", "inline-block");
-            $(".register").css("display", "none");
-        } else {
-            $(data).appendTo("#wrap-head");
-        }
-
-        /* 退出登录 */
-        $("#header .exit").click(function() {
-            $("#wrap-head").empty();
-            user = {};
-            $.cookie("loginUser", user, {expries: 7, path: "/"});
-            $(data).appendTo("#wrap-head");
-        })
-    })
-    $("#wrap-foot").load("foot.html");
-
     $(".detail-info-box").mouseenter(function() {
         $(".list-box dl").css("border-bottom", "0");
         $(".img-cover").css("border", "4px solid #d93600");
