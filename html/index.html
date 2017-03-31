@@ -59,11 +59,7 @@
                     <li><a href="#tab2">猜您喜欢</a></li>
                     <li><a href="#tab3">热评商品</a></li>
                 </ul>
-                <div class="tab_container">
-                    <div id="tab1" class="tab_content" style="display: block; "></div>
-                    <div id="tab2" class="tab_content" style="display: none; "></div>
-                    <div id="tab3" class="tab_content" style="display: none; "></div>
-                </div>
+                <div class="tab_container"></div>
                 <img src="../images/hot-pic4.jpg" alt="广告">
             </div>
         </div>
@@ -71,70 +67,6 @@
     <!-- 主要内容 -->
     <div id="wrap-main">
         <div id="main">
-            <!-- 一楼 -->
-            <div id="f1" class="floor">
-                <div class="left-floor">
-                    <div class="left-title">
-                        <span>1F</span>
-                        <p class="floor-title">商城自营</p>
-                    </div>
-                    <img src="../images/side-pic1.png" alt="侧边栏标题图片">
-                </div>
-                <div class="right-floor">
-                    <div class="right-title">
-                        <p>营养/保健</p>
-                    </div>
-                    <div class="goods-items"></div>
-                </div>
-            </div>
-            <!-- 二楼 -->
-            <div id="f2" class="floor">
-                <div class="left-floor">
-                    <div class="left-title">
-                        <span>2F</span>
-                        <p class="floor-title">健康食品</p>
-                    </div>
-                    <img src="../images/side-pic2.png" alt="侧边栏标题图片">
-                </div>
-                <div class="right-floor">
-                    <div class="right-title">
-                        <p>商品推荐</p>
-                    </div>
-                    <div class="goods-items"></div>
-                </div>
-            </div>
-            <!-- 三楼 -->
-            <div id="f3" class="floor">
-                <div class="left-floor">
-                    <div class="left-title">
-                        <span>3F</span>
-                        <p class="floor-title">生活用品</p>
-                    </div>
-                    <img src="../images/side-pic3.png" alt="侧边栏标题图片">
-                </div>
-                <div class="right-floor">
-                    <div class="right-title">
-                        <p>商品推荐</p>
-                    </div>
-                    <div class="goods-items"></div>
-                </div>
-            </div>
-            <!-- 四楼 -->
-            <div id="f4" class="floor">
-                <div class="left-floor">
-                    <div class="left-title">
-                        <span>4F</span>
-                        <p class="floor-title">健康理疗</p>
-                    </div>
-                    <img src="../images/side-pic4.png" alt="侧边栏标题图片">
-                </div>
-                <div class="right-floor">
-                    <div class="right-title">
-                        <p>商品推荐</p>
-                    </div>
-                    <div class="goods-items"></div>
-                </div>
-            </div>
             <div id="floor_box"></div>
             <img src="../images/ad-pic4.jpg" class="ad-pic" alt="广告图片">
         </div>
@@ -157,51 +89,58 @@
     </ul>
     <!-- 热卖商品 -->
     <script id="hot-goods" type="text/html">
-        <% for (var i = 0; i < list.length; i ++) { %>
-            <dl class="item-info">
-                <dt><a href="detail-info.html"><img src="../images/hot-pic1.png" alt="热卖商品"></a></dt>
-                <dd>
-                    <p class="item-title"><a href="#"><%= list[i] %></a></p>
-                    <p class="item-price"><span>商城价：</span><span>￥250800.00</span></p>
-                </dd>
-            </dl>
-        <% } %>
+        {{each hot_list}}
+        <div id="tab{{$value.hot_id}}" class="tab_content" style="display: none; ">
+            {{include "hot_content" $value.contents_list}}
+        </div>
+        {{/each}}
+    </script>
+    <script id="hot_content" type="text/html">
+        {{each contents}}
+        <dl class="item-info">
+            <dt><a href="detail-info.html"><img src="../images/hot-pic1.png" alt="热卖商品"></a></dt>
+            <dd>
+                <p class="item-title"><a href="detail-info.html">{{$value.name}}</a></p>
+                <p class="item-price"><span>商城价：</span><span>￥250800.00</span></p>
+            </dd>
+        </dl>
+        {{/each}}
     </script>
     <!-- 楼层模板 -->
     <script id="floor_item" type="text/html">
-        <% for (var i = 0; i < f_id.length; i ++) { %>
-        <div id="f<%= f_list[i] %>" class="floor"></div>
+        {{each f_list}}
+        <div id="f{{$value.f_id}}" class="floor">
             <div class="left-floor">
                 <div class="left-title">
-                    <span><%= f_list[i] %>F</span>
-                    <p class="floor-title"><%= fTitle_list[i] %></p>
+                    <span>{{$value.f_name}}F</span>
+                    <p class="floor-title">{{$value.f_title}}</p>
                 </div>
-                <img src="../images/side-pic<%= f_list[i] %>.png" alt="侧边栏标题图片">
+                <img src="../images/side-pic{{$value.f_id}}.png" alt="侧边栏标题图片">
             </div>
             <div class="right-floor">
                 <div class="right-title">
-                    <p><%= rTitle_list[i] %></p>
+                    <p>{{$value.right_title}}</p>
                 </div>
-                <div class="goods-items"><% include("f_box") %></div>
+                <div class="goods-items">{{include "f_box" $value.goods_contents}}</div>
             </div>
         </div>
-        <% } %>
+        {{/each}}
     </script>
     <!-- 楼层货物模板 -->
     <script id="f_box" type="text/html">
-        <% for (var i = 0; i < list.length; i ++) { %>
+        {{each goods_list}}
             <dl class="item-info">
                 <dt><img src="../images/first-pic1.png" alt="热卖商品"></dt>
                 <dd>
-                    <p class="item-title"><a href="#"><%= list[i] %></a></p>
+                    <p class="item-title"><a href="#">{{$value.item_title}}</a></p>
                     <p class="item-price"><span>￥16.00</span><span>￥55.00</span></p>
                 </dd>
             </dl>
-        <% } %>
+        {{/each}}
     </script>
     <script src="../js/jquery-1.12.4.min.js" charset="utf-8"></script>
     <script src="../js/jquery.cookie.js" charset="utf-8"></script>
-    <script src="../js/template-native.js" charset="utf-8"></script>
+    <script src="../js/template.js" charset="utf-8"></script>
     <script src="../js/public.js" charset="utf-8"></script>
     <script src="../js/index.js" charset="utf-8"></script>
 </body>

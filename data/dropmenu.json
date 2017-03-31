@@ -398,7 +398,7 @@
             "title": "健康服务",
             "name_contents": {
                 "name_list": [
-                    
+
                 ]
             },
             "left_content": {
@@ -407,14 +407,14 @@
                         "subtitle": "健康体检",
                         "main": {
                             "contents": [
-                                
+
                             ]
                         }
                     }, {
                         "subtitle": "预约挂号",
                         "main": {
                             "contents": [
-                                
+
                             ]
                         }
                     }
@@ -426,7 +426,7 @@
                         "subtitle": "中医服务",
                         "main": {
                             "contents": [
-                                
+
                             ]
                         }
                     }
@@ -565,6 +565,42 @@
                             ]
                         }
                     }
+                ]
+            }
+        }
+    ],
+    "hot_list": [
+        {
+            "hot_id": "1",
+            "contents_list": {
+                "contents": [
+                    {"name": "明仁风 酸枝 罗汉床1"},
+                    {"name": "明仁风 酸枝 罗汉床2"},
+                    {"name": "明仁风 酸枝 罗汉床3"},
+                    {"name": "明仁风 酸枝 罗汉床4"},
+                    {"name": "明仁风 酸枝 罗汉床5"}
+                ]
+            }
+        }, {
+            "hot_id": "2",
+            "contents_list": {
+                "contents": [
+                    {"name": "太行浩林 单瓶500ML1"},
+                    {"name": "太行浩林 单瓶500ML2"},
+                    {"name": "太行浩林 单瓶500ML3"},
+                    {"name": "太行浩林 单瓶500ML4"},
+                    {"name": "太行浩林 单瓶500ML5"}
+                ]
+            }
+        }, {
+            "hot_id": "3",
+            "contents_list": {
+                "contents": [
+                    {"name": "Topan拓泰 手持式家用吸尘器1"},
+                    {"name": "Topan拓泰 手持式家用吸尘器2"},
+                    {"name": "Topan拓泰 手持式家用吸尘器3"},
+                    {"name": "Topan拓泰 手持式家用吸尘器4"},
+                    {"name": "Topan拓泰 手持式家用吸尘器5"}
                 ]
             }
         }

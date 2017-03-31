@@ -77,6 +77,7 @@ $(function() {
                           .data("products", element)
                           .show()
                           .appendTo(".products-info")
+                          .children(".img-box").html('<img src= "' + element.imgSrc + '" />').end()
                           .children(".name-item").text(element.name).end()
                           .children(".price-item").text("￥" + element.price + ".00").end()
                           .children(".num-item").text(element.num).end()
@@ -108,26 +109,4 @@ $(function() {
         $("#tel").val() = "";
         return false;
     })
-
-    // $("#submit").click(function() {
-    //     if ($("#agree").is(":checked")) {
-    //         if (!isExist) {
-    //             $.post("../php/register.php", {phone: $("#phone").val(), password: $("#password").val(), email: $("#email").val()}).then(
-    //                 function(data) {
-    //                     data = JSON.parse(data);
-    //                     console.log("response:",data);
-    //                     console.log(data.status);
-    //                     if (data.status === 1) {
-    //                         console.log("success");
-    //                         window.location = "login.html";
-    //                     }
-    //                     else {
-    //                         $("#register_info").text("用户注册失败, " + data.message);
-    //                     }
-    //                 }
-    //             );
-    //             isExist = true;
-    //         }
-    //     }
-    // })
 })

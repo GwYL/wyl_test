@@ -51,7 +51,8 @@ $(function() {
             _price = parseFloat($(".item-price").text().slice(1)),
             _num = parseFloat($("#num").val()),
             _realNum = parseFloat($(".real-num").text()),
-            _sub = _price * _num;
+            _sub = _price * _num,
+            _imgSrc = $(".img-item").find("img").attr("src");
 
         if ($("#num").val() >= _realNum) {
             $(".no-product").css("display", "block");
@@ -70,7 +71,7 @@ $(function() {
 
         var index = exists(_name, _products);
         if (index === -1)
-            _products.push({name: _name, price: _price, num: _num, realNum: _realNum, sub: _sub});
+            _products.push({name: _name, price: _price, num: _num, realNum: _realNum, sub: _sub, imgSrc: _imgSrc});
         else
             _products[index].num += parseFloat($("#num").val());
 
@@ -107,11 +108,11 @@ $(function() {
     $(".ranking-box").eq(0).show();
     //点击事件
     $(".ranking-tab span").mouseenter(function() {
-        $(".ranking-tab span").removeClass("active"); //移除class="active"属性
-        $(this).addClass("active"); //添加class="active"到选择标签中
-        $(".ranking-box").hide(); //隐藏全部标签内容
-        var activeTab = $(this).find("a").attr("href"); //找到所属属性值来识别活跃选项卡和内容
-        $(activeTab).fadeIn(); //使内容消失
+        $(".ranking-tab span").removeClass("active");
+        $(this).addClass("active");
+        $(".ranking-box").hide();
+        var activeTab = $(this).find("a").attr("href");
+        $(activeTab).fadeIn();
         return false;
     });
 

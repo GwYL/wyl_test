@@ -75,7 +75,7 @@ body { font-family: "Microsoft Yahei",arial,宋体,"Helvetica Neue",Helvetica,ST
 #menu-list .arrow { display: block; width: 5px; height: 9px; background: url(../images/top_bg.png) no-repeat -150px -10px; position: absolute; right: 14px; top: 28px; }
 
 /* 分类列表 */
-.list-content { width: 516px; padding: 15px; position: absolute; left: 206px; top: 0; background: #fff; border: 1px solid #23c067; display: none; z-index: 100; }
+.list-content { width: 516px; padding: 15px; position: absolute; left: 206px; top: 0; background: #fff; border: 1px solid #23c067; display: none; }
 .list-content:nth-of-type(1) { top: -1px; }
 .left-content, .right-content { width: 250px; }
 .list-content dl dt { border-bottom: 2px solid #333; padding-bottom: 4px; }
@@ -89,38 +89,11 @@ body { font-family: "Microsoft Yahei",arial,宋体,"Helvetica Neue",Helvetica,ST
 
 /* li 属性的改变 */
 /*#menu-list li:hover { width:  }*/
-#menu-list li:nth-of-type(1):hover h4 a { color: #e4393c; }
-#menu-list li:nth-of-type(2):hover h4 a { color: #e4393c; }
-#menu-list li:nth-of-type(3):hover h4 a { color: #e4393c; }
-#menu-list li:nth-of-type(4):hover h4 a { color: #e4393c; }
-#menu-list li:nth-of-type(5):hover h4 a { color: #e4393c; }
-#menu-list li:nth-of-type(6):hover h4 a { color: #e4393c; }
-#menu-list li:nth-of-type(7):hover h4 a { color: #e4393c; }
-#menu-list li:nth-of-type(8):hover h4 a { color: #e4393c; }
-#menu-list li:nth-of-type(1):hover { border-top: 1px solid #23c067; border-left: 4px solid #23c067; padding-left: 13px; z-index: 2; width: 193px; background: #fff; }
-#menu-list li:nth-of-type(1):hover:after { content: ""; display: block; width: 210px; height: 1px; background: #23c067; position: absolute; bottom: -1px; left: -4px; z-index: 100; }
-#menu-list li:nth-of-type(1):hover:before { content: ""; display: block; width: 1px; height: 59px; background: #fff; position: absolute; top: 0px; right: -1px; z-index: 100; }
-#menu-list li:nth-of-type(2):hover { border-top: 1px solid #23c067; border-left: 4px solid #23c067; padding-left: 13px; z-index: 2; width: 193px; background: #fff; }
-#menu-list li:nth-of-type(2):hover:after { content: ""; display: block; width: 210px; height: 1px; background: #23c067; position: absolute; bottom: -1px; left: -4px; z-index: 100; }
-#menu-list li:nth-of-type(2):hover:before { content: ""; display: block; width: 1px; height: 59px; background: #fff; position: absolute; top: 0px; right: -1px; z-index: 100; }
-#menu-list li:nth-of-type(3):hover { border-top: 1px solid #23c067; border-left: 4px solid #23c067; padding-left: 13px; z-index: 2; width: 193px; background: #fff; }
-#menu-list li:nth-of-type(3):hover:after { content: ""; display: block; width: 210px; height: 1px; background: #23c067; position: absolute; bottom: -1px; left: -4px; z-index: 100; }
-#menu-list li:nth-of-type(3):hover:before { content: ""; display: block; width: 1px; height: 59px; background: #fff; position: absolute; top: 0px; right: -1px; z-index: 100; }
-#menu-list li:nth-of-type(4):hover { border-top: 1px solid #23c067; border-left: 4px solid #23c067; padding-left: 13px; z-index: 2; width: 193px; background: #fff; }
-#menu-list li:nth-of-type(4):hover:after { content: ""; display: block; width: 210px; height: 1px; background: #23c067; position: absolute; bottom: -1px; left: -4px; z-index: 100; }
-#menu-list li:nth-of-type(4):hover:before { content: ""; display: block; width: 1px; height: 59px; background: #fff; position: absolute; top: 0px; right: -1px; z-index: 100; }
-#menu-list li:nth-of-type(5):hover { border-top: 1px solid #23c067; border-left: 4px solid #23c067; padding-left: 13px; z-index: 2; width: 193px; background: #fff; }
-#menu-list li:nth-of-type(5):hover:after { content: ""; display: block; width: 210px; height: 1px; background: #23c067; position: absolute; bottom: -1px; left: -4px; z-index: 100; }
-#menu-list li:nth-of-type(5):hover:before { content: ""; display: block; width: 1px; height: 59px; background: #fff; position: absolute; top: 0px; right: -1px; z-index: 100; }
-#menu-list li:nth-of-type(6):hover { border-top: 1px solid #23c067; border-left: 4px solid #23c067; padding-left: 13px; z-index: 2; width: 193px; background: #fff; }
-#menu-list li:nth-of-type(6):hover:after { content: ""; display: block; width: 210px; height: 1px; background: #23c067; position: absolute; bottom: -1px; left: -4px; z-index: 100; }
-#menu-list li:nth-of-type(6):hover:before { content: ""; display: block; width: 1px; height: 59px; background: #fff; position: absolute; top: 0px; right: -1px; z-index: 100; }
-#menu-list li:nth-of-type(7):hover { border-top: 1px solid #23c067; border-left: 4px solid #23c067; padding-left: 13px; z-index: 2; width: 193px; background: #fff; }
-#menu-list li:nth-of-type(7):hover:after { content: ""; display: block; width: 210px; height: 1px; background: #23c067; position: absolute; bottom: -1px; left: -4px; z-index: 100; }
-#menu-list li:nth-of-type(7):hover:before { content: ""; display: block; width: 1px; height: 59px; background: #fff; position: absolute; top: 0px; right: -1px; z-index: 100; }
-#menu-list li:nth-of-type(8):hover { border-top: 1px solid #23c067; border-left: 4px solid #23c067; padding-left: 13px; z-index: 2; width: 193px; background: #fff; }
-#menu-list li:nth-of-type(8):hover:after { content: ""; display: block; width: 210px; height: 1px; background: #23c067; position: absolute; bottom: -1px; left: -4px; z-index: 100; }
-#menu-list li:nth-of-type(8):hover:before { content: ""; display: block; width: 1px; height: 59px; background: #fff; position: absolute; top: 0px; right: -1px; z-index: 100; }
+#menu-list li:hover .list-content { display: block; }
+#menu-list li:hover h4 a { color: #e4393c; }
+#menu-list li:hover { border-top: 1px solid #23c067; border-left: 4px solid #23c067; padding-left: 13px; z-index: 2; width: 193px; background: #fff; }
+#menu-list li:hover:after { content: ""; display: block; width: 210px; height: 1px; background: #23c067; position: absolute; bottom: -1px; left: -4px; z-index: 100; }
+#menu-list li:hover:before { content: ""; display: block; width: 1px; height: 59px; background: #fff; position: absolute; top: 0px; right: -1px; z-index: 100; }
 
 
 /* 列表属性的改变 */

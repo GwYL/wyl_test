@@ -1,0 +1,81 @@
+{
+    "f_list": [
+        {
+            "f_id": "1",
+            "f_name": "1",
+            "f_title": "商城自营",
+            "right_title": "营养/保健",
+            "goods_contents": {
+                "goods_list": [
+                    {"item_title": "阳光社区牛蒡佐伴1"},
+                    {"item_title": "阳光社区牛蒡佐伴2"},
+                    {"item_title": "阳光社区牛蒡佐伴3"},
+                    {"item_title": "阳光社区牛蒡佐伴4"},
+                    {"item_title": "阳光社区牛蒡佐伴5"},
+                    {"item_title": "阳光社区牛蒡佐伴6"},
+                    {"item_title": "阳光社区牛蒡佐伴7"},
+                    {"item_title": "阳光社区牛蒡佐伴8"},
+                    {"item_title": "阳光社区牛蒡佐伴9"},
+                    {"item_title": "阳光社区牛蒡佐伴10"},
+                ]
+            }
+        },{
+            "f_id": "2",
+            "f_name": "2",
+            "f_title": "健康食品",
+            "right_title": "商品推荐",
+            "goods_contents": {
+                "goods_list": [
+                    {"item_title": "老爷岭榛蘑200g1"},
+                    {"item_title": "老爷岭榛蘑200g2"},
+                    {"item_title": "老爷岭榛蘑200g3"},
+                    {"item_title": "老爷岭榛蘑200g4"},
+                    {"item_title": "老爷岭榛蘑200g5"},
+                    {"item_title": "老爷岭榛蘑200g6"},
+                    {"item_title": "老爷岭榛蘑200g7"},
+                    {"item_title": "老爷岭榛蘑200g8"},
+                    {"item_title": "老爷岭榛蘑200g9"},
+                    {"item_title": "老爷岭榛蘑200g10"},
+                ]
+            }
+        },{
+            "f_id": "3",
+            "f_name": "3",
+            "f_title": "生活用品",
+            "right_title": "商品推荐",
+            "goods_contents": {
+                "goods_list": [
+                    {"item_title": "心语空气加湿器-花瓶加湿器1"},
+                    {"item_title": "心语空气加湿器-花瓶加湿器2"},
+                    {"item_title": "心语空气加湿器-花瓶加湿器3"},
+                    {"item_title": "心语空气加湿器-花瓶加湿器4"},
+                    {"item_title": "心语空气加湿器-花瓶加湿器5"},
+                    {"item_title": "心语空气加湿器-花瓶加湿器6"},
+                    {"item_title": "心语空气加湿器-花瓶加湿器7"},
+                    {"item_title": "心语空气加湿器-花瓶加湿器8"},
+                    {"item_title": "心语空气加湿器-花瓶加湿器9"},
+                    {"item_title": "心语空气加湿器-花瓶加湿器10"},
+                ]
+            }
+        },{
+            "f_id": "4",
+            "f_name": "4",
+            "f_title": "健康理疗",
+            "right_title": "商品推荐",
+            "goods_contents": {
+                "goods_list": [
+                    {"item_title": "咪咪熊M6蒸蛋器1"},
+                    {"item_title": "咪咪熊M6蒸蛋器2"},
+                    {"item_title": "咪咪熊M6蒸蛋器3"},
+                    {"item_title": "咪咪熊M6蒸蛋器4"},
+                    {"item_title": "咪咪熊M6蒸蛋器5"},
+                    {"item_title": "咪咪熊M6蒸蛋器6"},
+                    {"item_title": "咪咪熊M6蒸蛋器7"},
+                    {"item_title": "咪咪熊M6蒸蛋器8"},
+                    {"item_title": "咪咪熊M6蒸蛋器9"},
+                    {"item_title": "咪咪熊M6蒸蛋器10"},
+                ]
+            }
+        }
+    ]
+}

@@ -8,7 +8,7 @@ $(function () {
         $(".list-box dl").css("border-bottom", "1px solid #f0f0f0");
         $(".img-cover").css("border", "4px solid #d93600");
     })
-
+    
     // 添加到购物车
     $(".addToCart").click(function() {
         $(".hint").css("display", "block");
@@ -20,14 +20,15 @@ $(function () {
             _price = parseFloat($(".item-price").text()),
             _num = parseFloat(1),
             _realNum = 100,
-            _sub = _price * _num;
+            _sub = _price * _num,
+            _imgSrc = $(".img-box").find("img").attr("src");
 
         $.cookie.json = true;
         var _products = $.cookie("products") || [];
 
         var index = exists(_name, _products);
         if (index === -1)
-            _products.push({name: _name, price: _price, num: _num, realNum: _realNum, sub: _sub});
+            _products.push({name: _name, price: _price, num: _num, realNum: _realNum, sub: _sub, imgSrc: _imgSrc});
         else
             _products[index].num += 1;
 

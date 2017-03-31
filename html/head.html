@@ -43,7 +43,7 @@
                     </p>
                 </div>
             </li>
-            <li><span class="cart-num"></span><a href="cart.html">我的购物车<img src="../images/header-nav.gif"></a></li>
+            <li><span class="cart-num"></span><a href="cart.html">我的购物车</a></li>
             <li><a href="#">我的收藏</a></li>
             <li><a href="#">帮助中心<img src="../images/header-nav.gif"></a>
                 <div class="dropdown">
@@ -138,7 +138,7 @@
 </script>
 <script id="name-info" type="text/html">
     {{each name_list}}
-        <a href="health_l.html">{{$value.name}}</a>
+        <a href="health_1.html">{{$value.name}}</a>
     {{/each}}
 </script>
 <script id="menu-model" type="text/html">
@@ -156,20 +156,11 @@
         <span><a href="health_1.html">{{$value.content}}</a></span> |
     {{/each}}
 </script>
-<script src="../js/jquery-1.12.4.min.js" charset="utf-8"></script>
-<script src="../js/template.js" charset="utf-8"></script>
 <script type="text/javascript">
     $(function() {
         $.ajax("../data/dropmenu.json").done(function(data) {
             var html_menu = template("menu-li", data);
             $("#menu-list").html(html_menu);
-            $("#menu-list li").mouseenter(function() {
-                $(this).children(".list-content").css("display", "block");
-            })
-
-            $("#menu-list li").mouseleave(function() {
-                $(this).children(".list-content").css("display", "none");
-            })
         })
     })
 </script>

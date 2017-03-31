@@ -8,11 +8,11 @@ $(function() {
     $.each(_products, function(index, element) {
         amount = element.num;
         _realNum = element.realNum;
-
         $(".product:last").clone(true)
                           .data("products", element)
                           .show()
                           .appendTo(".product-info")
+                          .children(".img-box").html('<img src= "' + element.imgSrc + '" />').end()
                           .children(".name-item").text(element.name).end()
                           .children(".price-item").text("￥" + element.price + ".00").end()
                           .children(".num-item").children(".num-info").val(amount).end().end()
@@ -54,21 +54,27 @@ $(function() {
 
     //
     $(".ck_product").click(function() {
-        total = 0;
         // 当前复选框选择计算所选商品总价
-        var currMoney = null;
+        var currMoney = parseFloat($(this).parents(".product").find(".sub-info").text()),
+            _total = parseFloat($(this).parents(".tb_product").find(".total").text());
         var state = $(this).prop("checked");
         if (state) {
-            $.each(_products, function(index, element) {
-                // var currIndex = $.inArray($(this).parents(".product").children(".name-item").text(), _products);
-                total += element.sub;
-                // currMoney = parseFloat($(this).parents(".product").children(".sub-item").children(".sub-info").text());
-                // console.log(currMoney);
-            });
+            total = currMoney + _total;
             $(this).parents(".tb_product").children(".tb_content").children("p").children(".total").text(total);
+
+            // 设置加减按钮及文本框为不可用状态
+            $(this).parents(".product").find(".add").attr("disabled", true);
+            $(this).parents(".product").find(".minus").attr("disabled", true);
+            $(this).parents(".product").find(".num-info").attr("disabled", true);
         }
         if (!state) {
-            $(this).parents(".tb_product").children(".tb_content").children("p").children(".total").text(0);
+            total = _total - currMoney;
+            $(this).parents(".tb_product").children(".tb_content").children("p").children(".total").text(total);
+
+            // 恢复状态
+            $(this).parents(".product").find(".add").attr("disabled", false);
+            $(this).parents(".product").find(".minus").attr("disabled", false);
+            $(this).parents(".product").find(".num-info").attr("disabled", false);
         }
     })
 

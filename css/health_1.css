@@ -19,7 +19,7 @@
 .sub-list li { width: 170px; padding-left: 18px; }
 .sub-list li .sub-list { display: none; }
 .sub-list li .sub-list li { width: 155px; padding-left: 15px; }
-.sub-list li .sub-list li:first-child a { color: red; }
+.list-item li:first-child .sub-list li .sub-list li:first-child a { color: red; }
 
 .imgbox { width: 196px; border: 1px solid #d7d7d7; margin-bottom: 10px; }
 .imgbox img { width: 196px; display: block; }
@@ -39,7 +39,7 @@
 .sort-ways ul li img { position: relative; top: 2px; margin-left: 2px; }
 .sort-ways ul li:hover a { color: #e4393c; }
 
-.list-box { width: 852px; }
+.list-box { width: 852px; position: relative; z-index: 0; z-index: 0; }
 .list-box dl { width: 220px; padding: 5px; border: 1px solid #f0f0f0; position: absolute; height: 330px; transition: all 0.5s; z-index: 1; }
 
 .list-box dl dt { width: 220px; height: 220px; }

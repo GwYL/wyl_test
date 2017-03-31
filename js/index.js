@@ -1,5 +1,4 @@
 $(function() {
-
     /* 轮播图 */
     var lis = $("#carousel li"),
         len = lis.length,
@@ -42,60 +41,101 @@ $(function() {
             nextIndex = 0;
     }
 
-    // 热卖商品等模板添加
-    var t1 = {
-        list: ["明仁风 酸枝 罗汉床1", "明仁风 酸枝 罗汉床2", "明仁风 酸枝 罗汉床3", "明仁风 酸枝 罗汉床4", "明仁风 酸枝 罗汉床5"]
-    }
-    var thtml1 = template("hot-goods", t1);
-    $("#tab1").html(thtml1);
+    $.ajax("../data/dropmenu.json", {async: false}).done(function(data) {
+        var hot_html = template("hot-goods", data);
+        $(".tab_container").html(hot_html);
+    })
+    // $.ajax("../data/index.json", {async: false}).done(function(data_f) {
+    //     var f_html = template("floor_item", data_f);
+    //     $("#floor_box").html(f_html);
+    // })
 
-    var t2 = {
-        list: ["太行浩林 单瓶500ML1", "太行浩林 单瓶500ML2", "太行浩林 单瓶500ML3", "太行浩林 单瓶500ML4", "太行浩林 单瓶500ML5"]
+    var data_f = {
+        "f_list": [
+            {
+                "f_id": "1",
+                "f_name": "1",
+                "f_title": "商城自营",
+                "right_title": "营养/保健",
+                "goods_contents": {
+                    "goods_list": [
+                        {"item_title": "阳光社区牛蒡佐伴1"},
+                        {"item_title": "阳光社区牛蒡佐伴2"},
+                        {"item_title": "阳光社区牛蒡佐伴3"},
+                        {"item_title": "阳光社区牛蒡佐伴4"},
+                        {"item_title": "阳光社区牛蒡佐伴5"},
+                        {"item_title": "阳光社区牛蒡佐伴6"},
+                        {"item_title": "阳光社区牛蒡佐伴7"},
+                        {"item_title": "阳光社区牛蒡佐伴8"},
+                        {"item_title": "阳光社区牛蒡佐伴9"},
+                        {"item_title": "阳光社区牛蒡佐伴10"},
+                    ]
+                }
+            },{
+                "f_id": "2",
+                "f_name": "2",
+                "f_title": "健康食品",
+                "right_title": "商品推荐",
+                "goods_contents": {
+                    "goods_list": [
+                        {"item_title": "老爷岭榛蘑200g1"},
+                        {"item_title": "老爷岭榛蘑200g2"},
+                        {"item_title": "老爷岭榛蘑200g3"},
+                        {"item_title": "老爷岭榛蘑200g4"},
+                        {"item_title": "老爷岭榛蘑200g5"},
+                        {"item_title": "老爷岭榛蘑200g6"},
+                        {"item_title": "老爷岭榛蘑200g7"},
+                        {"item_title": "老爷岭榛蘑200g8"},
+                        {"item_title": "老爷岭榛蘑200g9"},
+                        {"item_title": "老爷岭榛蘑200g10"},
+                    ]
+                }
+            },{
+                "f_id": "3",
+                "f_name": "3",
+                "f_title": "生活用品",
+                "right_title": "商品推荐",
+                "goods_contents": {
+                    "goods_list": [
+                        {"item_title": "心语空气加湿器-花瓶加湿器1"},
+                        {"item_title": "心语空气加湿器-花瓶加湿器2"},
+                        {"item_title": "心语空气加湿器-花瓶加湿器3"},
+                        {"item_title": "心语空气加湿器-花瓶加湿器4"},
+                        {"item_title": "心语空气加湿器-花瓶加湿器5"},
+                        {"item_title": "心语空气加湿器-花瓶加湿器6"},
+                        {"item_title": "心语空气加湿器-花瓶加湿器7"},
+                        {"item_title": "心语空气加湿器-花瓶加湿器8"},
+                        {"item_title": "心语空气加湿器-花瓶加湿器9"},
+                        {"item_title": "心语空气加湿器-花瓶加湿器10"},
+                    ]
+                }
+            },{
+                "f_id": "4",
+                "f_name": "4",
+                "f_title": "健康理疗",
+                "right_title": "商品推荐",
+                "goods_contents": {
+                    "goods_list": [
+                        {"item_title": "咪咪熊M6蒸蛋器1"},
+                        {"item_title": "咪咪熊M6蒸蛋器2"},
+                        {"item_title": "咪咪熊M6蒸蛋器3"},
+                        {"item_title": "咪咪熊M6蒸蛋器4"},
+                        {"item_title": "咪咪熊M6蒸蛋器5"},
+                        {"item_title": "咪咪熊M6蒸蛋器6"},
+                        {"item_title": "咪咪熊M6蒸蛋器7"},
+                        {"item_title": "咪咪熊M6蒸蛋器8"},
+                        {"item_title": "咪咪熊M6蒸蛋器9"},
+                        {"item_title": "咪咪熊M6蒸蛋器10"},
+                    ]
+                }
+            }
+        ]
     }
-    var thtml2 = template("hot-goods", t2);
-    $("#tab2").html(thtml2);
 
-    var t3 = {
-        list: ["Topan拓泰 手持式家用吸尘器1", "Topan拓泰 手持式家用吸尘器2", "Topan拓泰 手持式家用吸尘器3", "Topan拓泰 手持式家用吸尘器4", "Topan拓泰 手持式家用吸尘器5"]
-    }
-    var thtml3 = template("hot-goods", t3);
-    $("#tab3").html(thtml3);
-
-    // 楼层框架
-    // var f_content = {
-    //     title: "楼层",
-    //     f_list: ["1", "2", "3", "4"],
-    //     fTitle_list: ["商城自营", "健康食品", "生活用品", "健康理疗"],
-    //     rTitle_list: ["营养/保健", "商品推荐", "商品推荐", "商品推荐"],
-    //     list: {
-    //         title: "物品",
-    //         content: ["阳光社区牛蒡佐伴1", "阳光社区牛蒡佐伴2", "阳光社区牛蒡佐伴3", "阳光社区牛蒡佐伴4", "阳光社区牛蒡佐伴5", "阳光社区牛蒡佐伴6", "阳光社区牛蒡佐伴7", "阳光社区牛蒡佐伴8", "阳光社区牛蒡佐伴9", "阳光社区牛蒡佐伴10"]
-    //     }
-    // }
-    // var f_html = template("floor_item", f_content);
-    // $("#floor_box").html(f_html);
 
     // 楼层-->模板添加内容
-    var data_f1 = {
-        list: ["阳光社区牛蒡佐伴1", "阳光社区牛蒡佐伴2", "阳光社区牛蒡佐伴3", "阳光社区牛蒡佐伴4", "阳光社区牛蒡佐伴5", "阳光社区牛蒡佐伴6", "阳光社区牛蒡佐伴7", "阳光社区牛蒡佐伴8", "阳光社区牛蒡佐伴9", "阳光社区牛蒡佐伴10"]
-    }
-    var html1 = template("f_box", data_f1);
-    $("#f1 .goods-items").html(html1);
-    var data_f2 = {
-        list: ["老爷岭榛蘑200g1", "老爷岭榛蘑200g2", "老爷岭榛蘑200g3", "老爷岭榛蘑200g4", "老爷岭榛蘑200g5", "老爷岭榛蘑200g6", "老爷岭榛蘑200g7", "老爷岭榛蘑200g8", "老爷岭榛蘑200g9", "阳老爷岭榛蘑200g10"]
-    }
-    var html2 = template("f_box", data_f2);
-    $("#f2 .goods-items").html(html2);
-    var data_f3 = {
-        list: ["心语空气加湿器-花瓶加湿器1", "心语空气加湿器-花瓶加湿器2", "心语空气加湿器-花瓶加湿器3", "心语空气加湿器-花瓶加湿器4", "心语空气加湿器-花瓶加湿器5", "心语空气加湿器-花瓶加湿器6", "心语空气加湿器-花瓶加湿器7", "心语空气加湿器-花瓶加湿器8", "心语空气加湿器-花瓶加湿器9", "心语空气加湿器-花瓶加湿器10"]
-    }
-    var html3 = template("f_box", data_f3);
-    $("#f3 .goods-items").html(html3);
-    var data_f4 = {
-        list: ["咪咪熊M6蒸蛋器1", "咪咪熊M6蒸蛋器2", "咪咪熊M6蒸蛋器3", "咪咪熊M6蒸蛋器4", "咪咪熊M6蒸蛋器5", "咪咪熊M6蒸蛋器6", "咪咪熊M6蒸蛋器7", "咪咪熊M6蒸蛋器8", "咪咪熊M6蒸蛋器9", "咪咪熊M6蒸蛋器10"]
-    }
-    var html4 = template("f_box", data_f4);
-    $("#f4 .goods-items").html(html4);
+    var f_html = template("floor_item", data_f);
+    $("#floor_box").html(f_html);
 
     /* 楼层特效 */
     var _cover = document.createElement("div");

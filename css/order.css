@@ -70,7 +70,9 @@ select { padding: 2px 4px; position: relative; }
 .products-info { width: 958px; }
 .list-info .product { width: 958px; height: 56px; border-bottom: 1px solid #aaa; }
 .product div { float: left; height: 56px; line-height: 56px; }
-.name-item { width: 580px; padding-left: 40px; }
+.img-box { width: 40px!important; height: 40px!important; position: relative; top: 8px; left: 8px; }
+.img-box img { width: 40px; }
+.name-item { width: 560px; padding-left: 20px; }
 .price-item { width: 100px; }
 .num-item { width: 120px; text-align: center; }
 .minus { margin-left: 20px; }
