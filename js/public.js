@@ -1,6 +1,5 @@
 $(function() {
     // 加载公共部分
-    // $("#wrap-head").load("head.html");
     $.ajax("head.html").done(function(data) {
         $.cookie.json = true;
         var user = $.cookie("loginUser") || {};
