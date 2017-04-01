@@ -12,12 +12,16 @@ $(function() {
             $(".user-box").css("display", "inline-block");
             $(".exit-box").css("display", "inline-block");
             $(".register").css("display", "none");
+            $(".header_nav li:nth-of-type(2)").find("a").attr("href", "order.html");
+            $(".header_nav li:nth-of-type(3)").find("a").attr("href", "cart.html");
         } else {
             $(data).appendTo("#wrap-head");
+            $(".header_nav li:nth-of-type(2)").find("a").attr("href", "login.html");
+            $(".header_nav li:nth-of-type(3)").find("a").attr("href", "login.html");
         }
         setInterval(function() {
             var products = $.cookie("products") || {};
-            if (!$.isEmptyObject(products)) {
+            if (!$.isEmptyObject(products) && !$.isEmptyObject(user)) {
                 $("#header .cart-num").css("display", "block");
                 $("#header .cart-num").text(products.length);
             } else {
