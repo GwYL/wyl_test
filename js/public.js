@@ -22,7 +22,7 @@ $(function() {
                 $("#header .cart-num").css("display", "block");
                 $("#header .cart-num").text(products.length);
             } else {
-                $("#header .cart-num").css("display", "none");                
+                $("#header .cart-num").css("display", "none");
             }
         }, 100)
 

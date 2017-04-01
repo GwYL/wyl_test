@@ -5,7 +5,7 @@ $(function() {
 
 	/* 读取 address.json 中的所有省市区信息 */
 	$.ajax("../data/addresses.json").done(function(data){
-		// console.log(data);
+
 		var provinces = data.regions;
 		provinces.forEach(function(province){
 			addresses[province.name] = {}; // 保存省份下城市的对象
@@ -15,15 +15,10 @@ $(function() {
 			});
 		});
 
-		// console.log(addresses);
-
 		initProvince();
 	});
 
-
-	// 当省份选择改变时：
 	$("#province").change(initCity);
-	// 当城市选择改变时：
 	$("#city").change(initDistrict);
 
 	// 设置省份的显示信息
@@ -38,7 +33,6 @@ $(function() {
 
 	// 设置选中省份下的城市显示信息
 	function initCity() {
-		// 当前选中的省份
 		var currProvince = $("#province").val();
 		// 获取该省份的城市信息，并显示
 		var cities = addresses[currProvince],
@@ -53,7 +47,6 @@ $(function() {
 
 	// 设置选中省份与城市下的区县信息
 	function initDistrict() {
-		// 当前选中的省份与城市
 		var currProvince = $("#province").val(),
 			currCity = $("#city").val(),
 			html = "";
